@@ -11,7 +11,7 @@
 export default {
 	name: 'Projects',
 	async asyncData({ $content }) {
-		const projects = await $content('projects').fetch()
+		const projects = await $content('streams', { deep: true }).fetch()
 
 		return {
 			projects,
