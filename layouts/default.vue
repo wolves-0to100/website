@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<header>
-			<img :src="logoLink" />
+			<img :src="logoLink" @click="$router.push('/')" />
 			<nav>
 				<nuxt-link to="/Blog">Blog</nuxt-link>
 				<nuxt-link to="/Projects">Projects</nuxt-link>
@@ -73,6 +73,7 @@ html {
 }
 
 body {
+	transition: all 200ms ease-in-out;
 	background-color: #fff;
 	color: rgba(0, 0, 0, 0.8);
 	a {
@@ -110,6 +111,7 @@ button {
 
 header {
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -117,6 +119,7 @@ header {
 	height: 100px;
 
 	img {
+		cursor: pointer;
 		height: 30%;
 		width: auto;
 	}
