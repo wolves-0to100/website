@@ -24,13 +24,9 @@ export default {
 }
 </script>
 
-<style>
-.container {
-	margin: 0 auto;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+<style scoped>
+article {
+	padding: 100px 10%;
+	max-width: 1080px;
 }
 </style>

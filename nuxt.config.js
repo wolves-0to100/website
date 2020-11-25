@@ -27,7 +27,20 @@ export default {
 				content: process.env.npm_package_description || '',
 			},
 		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+			{
+				rel: 'stylesheet',
+				href:
+					'https://fonts.googleapis.com/css2?family=Montserrat&display=swap',
+			},
+			{
+				rel: 'stylesheet',
+				href:
+					'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
+			},
+		],
 	},
 	/*
 	 ** Global CSS
@@ -49,6 +62,7 @@ export default {
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
 		'@nuxtjs/eslint-module',
+		'@nuxtjs/color-mode',
 	],
 	/*
 	 ** Nuxt.js modules
