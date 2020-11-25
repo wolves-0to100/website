@@ -33,12 +33,7 @@ export default {
 			{
 				rel: 'stylesheet',
 				href:
-					'https://fonts.googleapis.com/css2?family=Montserrat&display=swap',
-			},
-			{
-				rel: 'stylesheet',
-				href:
-					'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
+					'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
 			},
 		],
 	},

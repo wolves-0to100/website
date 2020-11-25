@@ -84,7 +84,7 @@ body {
 	}
 }
 .dark-mode body {
-	background-color: #161616;
+	background-color: #1a1a1a;
 	color: #ebf4f1;
 	a {
 		color: #ebf4f1;
@@ -109,14 +109,24 @@ button {
 	outline: none;
 }
 
+.dark-mode header {
+	background: #1a1a1a;
+}
+
 header {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	font-weight: 600;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 80px;
 	height: 100px;
+	backdrop-filter: blur(8px);
+	background: rgba(242, 242, 242, 0.6);
+	z-index: 1;
+	perspective: 1000px;
 
 	img {
 		cursor: pointer;
@@ -134,8 +144,8 @@ header {
 	}
 	button {
 		padding: 0;
-		width: 24px;
-		height: 24px;
+		width: 20px;
+		height: 20px;
 		svg {
 			width: 100%;
 			height: 100%;

@@ -1,7 +1,6 @@
 <template>
 	<div class="container">
-		<h1>{{ page.title }}</h1>
-		<nuxt-content :document="page" />
+		<h1>Cocktails</h1>
 	</div>
 </template>
 

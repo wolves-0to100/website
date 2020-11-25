@@ -28,12 +28,14 @@ export default {
 
 <style scoped>
 article {
+	margin: 100px 0;
 	padding: 100px 10%;
 	max-width: 1080px;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem;
+	font-weight: 700;
 }
 
 .author {
