@@ -1,11 +1,20 @@
 <template>
 	<div class="container">
-		<h1>0to100ink</h1>
+		<h1>{{ page.title }}</h1>
+		<nuxt-content :document="page" />
 	</div>
 </template>
 
 <script>
-export default {}
+export default {
+	async asyncData({ $content }) {
+		const cocktails = await $content('cocktails', { deep: true }).fetch()
+
+		return {
+			cocktails,
+		}
+	},
+}
 </script>
 
 <style>

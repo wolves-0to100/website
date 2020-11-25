@@ -1,11 +1,22 @@
 <template>
 	<div class="container">
-		<h1>0to100ink</h1>
+		<h1>Posts</h1>
+		<a></a>
 	</div>
 </template>
 
 <script>
-export default {}
+export default {
+	async asyncData({ $content }) {
+		const articles = await $content('articles', {
+			deep: true,
+		}).fetch()
+
+		return {
+			articles,
+		}
+	},
+}
 </script>
 
 <style>
