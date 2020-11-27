@@ -5,7 +5,6 @@
 				<img :src="logoLink" @click="$router.push('/')" />
 				<nav>
 					<nuxt-link to="/Blog">Blog</nuxt-link>
-					<nuxt-link to="/Projects">Projects</nuxt-link>
 					<nuxt-link to="/Cocktails">Cocktails</nuxt-link>
 					<button aria-label="Color Mode" @click="toggleColorMode">
 						<svg
@@ -87,11 +86,11 @@ body {
 }
 .dark-mode body {
 	background-color: #1a1a1a;
-	color: #ebf4f1;
+	color: #e0e0e0;
 	a {
-		color: #ebf4f1;
+		color: #e0e0e0;
 		&.nuxt-link-active {
-			border-bottom: 1px solid #ebf4f1;
+			border-bottom: 1px solid #e0e0e0;
 		}
 	}
 }
@@ -169,12 +168,28 @@ header {
 
 .nuxt-content {
 	h2,
-	h3 {
-		margin-top: 2rem;
+	h3,
+	h4 {
+		margin-top: 2em;
 	}
 
-	p {
+	p,
+	ul,
+	ol {
 		margin: 1rem 0;
 	}
+
+	li {
+		padding-left: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: 600;
+	}
+}
+
+.nuxt-content-highlight {
+	font-size: 0.9rem;
 }
 </style>

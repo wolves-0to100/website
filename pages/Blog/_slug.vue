@@ -1,7 +1,17 @@
 <template>
 	<article>
+		<img
+			class="img"
+			:src="require(`~/assets/Blog/${article.img}`)"
+			loading="lazy"
+		/>
 		<h1>{{ article.title }}</h1>
 		<p class="author">{{ article.author }}</p>
+		<ul class="toc">
+			<li v-for="link of article.toc" :key="link.id">
+				<NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+			</li>
+		</ul>
 		<nuxt-content :document="article" />
 		<div class="dates">
 			<p>Posted: {{ formatDate(article.createdAt) }}</p>
@@ -32,6 +42,18 @@ article {
 	margin: 0 auto;
 	padding: 100px 10%;
 	max-width: 1080px;
+}
+
+.img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: calc(100px + 100px + 100px);
+	object-fit: cover;
+	pointer-events: none;
+	user-select: none;
+	opacity: 0.2;
 }
 
 h1 {
