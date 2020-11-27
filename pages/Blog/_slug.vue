@@ -26,9 +26,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 article {
-	margin: 100px 0;
+	width: 100%;
+	margin: 0 auto;
 	padding: 100px 10%;
 	max-width: 1080px;
 }
