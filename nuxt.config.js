@@ -49,12 +49,6 @@ export default {
 				href: 'https://0to100.ink',
 			},
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-			{ rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-			{
-				rel: 'stylesheet',
-				href:
-					'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
-			},
 			{
 				rel: 'apple-touch-icon',
 				sizes: '180x180',
@@ -85,7 +79,7 @@ export default {
 	/*
 	 ** Global CSS
 	 */
-	css: [],
+	css: ['@/assets/Styles/fonts.css'],
 	/*
 	 ** Plugins to load before mounting the App
 	 ** https://nuxtjs.org/guide/plugins
