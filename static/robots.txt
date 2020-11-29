@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Sitemap: https://0to100.ink/sitemap.xml
+
+Disallow: /Imprint/
