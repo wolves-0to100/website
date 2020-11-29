@@ -1,0 +1,39 @@
+default:
+    image: node:latest
+
+stages:
+    - build
+    - deploy
+    - lhci
+
+cache:
+    paths:
+        - node_modules/
+
+build:
+    stage: build
+    only:
+        - master
+    script:
+        - npm install
+        - npm run generate
+    artifacts:
+        paths:
+            - dist/
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    script:
+        - cp CNAME dist/
+        - surge dist/
+
+lhci:
+    stage: lhci
+    image: cypress/browsers:node12.6.0-chrome77
+    only:
+        - master
+    script:
+        - npm install -g @lhci/cli@0.3.x
+        - lhci autorun --upload.target=temporary-public-storage --collect.settings.chromeFlags="--no-sandbox" --collect.url=$LIGHTHOUSE_TEST_URL || echo "LHCI failed!"
