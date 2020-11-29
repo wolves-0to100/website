@@ -27,7 +27,7 @@ deploy:
         - master
     script:
         - cp CNAME dist/
-        - surge dist/
+        - node_modules/.bin/surge dist/
 
 lhci:
     stage: lhci
