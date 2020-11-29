@@ -195,6 +195,17 @@ h1 {
 	}
 }
 
+.dark-mode {
+	.toc {
+		background-color: #111111;
+	}
+	.details {
+		> * {
+			background-color: #111111;
+		}
+	}
+}
+
 .toc {
 	display: inline-block;
 	list-style: none;
