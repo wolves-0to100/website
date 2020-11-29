@@ -2,7 +2,11 @@
 	<div>
 		<header>
 			<div class="wrapper">
-				<img :src="logoLink" @click="$router.push('/')" />
+				<img
+					:src="logoLink"
+					alt="0to100 Logo"
+					@click="$router.push('/')"
+				/>
 				<nav>
 					<nuxt-link to="/Blog">Blog</nuxt-link>
 					<nuxt-link to="/Cocktails">Cocktails</nuxt-link>
