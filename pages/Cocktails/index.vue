@@ -1,0 +1,19 @@
+<template>
+	<div class="container">
+		<h1>Cocktails</h1>
+	</div>
+</template>
+
+<script>
+export default {
+	async asyncData({ $content }) {
+		const cocktails = await $content('cocktails', { deep: true }).fetch()
+
+		return {
+			cocktails,
+		}
+	},
+}
+</script>
+
+<style></style>
