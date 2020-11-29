@@ -8,15 +8,28 @@
 		/>
 		<h1>{{ article.title }}</h1>
 		<p class="author">{{ article.author }}</p>
-		<ul class="toc">
-			<li v-for="link of article.toc" :key="link.id">
-				<NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-			</li>
-		</ul>
+		<div class="info">
+			<div class="details">
+				<div class="description">
+					<p><b>Beschreibung</b></p>
+					<p>{{ article.description }}</p>
+				</div>
+				<p>Lesezeit: {{ article.readingTime }}</p>
+			</div>
+			<ul class="toc">
+				<li v-for="link of article.toc" :key="link.id">
+					<NuxtLink
+						:to="`#${link.id}`"
+						:class="`level-${link.depth}`"
+						>{{ link.text }}</NuxtLink
+					>
+				</li>
+			</ul>
+		</div>
 		<nuxt-content :document="article" />
 		<div class="dates">
-			<p>Posted: {{ formatDate(article.createdAt) }}</p>
-			<p>Post last updated: {{ formatDate(article.updatedAt) }}</p>
+			<p>Veröffentlicht: {{ formatDate(article.createdAt) }}</p>
+			<p>Ak­tu­a­li­sie­ren: {{ formatDate(article.updatedAt) }}</p>
 		</div>
 	</article>
 </template>
@@ -154,5 +167,47 @@ h1 {
 
 .nuxt-content-container {
 	margin: 2rem 0;
+}
+
+.info {
+	display: flex;
+	margin: 3rem 0 0;
+	font-size: 0.9rem;
+}
+
+.details {
+	width: auto;
+	max-width: 65%;
+	margin-right: 2rem;
+	> * {
+		background-color: #f5f5f5;
+		border-radius: 12px;
+		padding: 1.5rem 2rem;
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.description {
+	p {
+		margin: 1rem 0;
+	}
+}
+
+.toc {
+	display: inline-block;
+	list-style: none;
+	background-color: #f5f5f5;
+	border-radius: 12px;
+	padding: 1.5rem 2rem;
+
+	.nuxt-link-active {
+		border: none;
+	}
+
+	.level-3 {
+		padding-left: 0.6em;
+	}
 }
 </style>

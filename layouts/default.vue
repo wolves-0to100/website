@@ -80,11 +80,11 @@ html {
 body {
 	transition: all 200ms ease-in-out;
 	background-color: #fff;
-	color: rgba(0, 0, 0, 0.8);
+	color: #1a1a1a;
 	a {
-		color: rgba(0, 0, 0, 0.8);
+		color: #1a1a1a;
 		&.nuxt-link-active {
-			border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+			border-bottom: 1px solid #1a1a1a;
 		}
 	}
 }
@@ -96,12 +96,17 @@ body {
 		&.nuxt-link-active {
 			border-bottom: 1px solid #e0e0e0;
 		}
+		&:hover {
+			color: #d90000;
+		}
 	}
 }
 
 a {
 	cursor: pointer;
 	transition: color 200ms ease-in-out;
+	text-decoration: none;
+	font-weight: 600;
 	&:hover {
 		color: #d90000;
 	}
