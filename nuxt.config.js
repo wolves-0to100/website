@@ -14,17 +14,23 @@ export default {
 	 ** See https://nuxtjs.org/api/configuration-head
 	 */
 	head: {
-		title: process.env.npm_package_name || '',
+		title: '0to100',
+		htmlAttrs: {
+			lang: 'de-DE',
+		},
 		meta: [
 			{ charset: 'utf-8' },
 			{
-				name: 'viewport',
-				content: 'width=device-width, initial-scale=1',
-			},
-			{
 				hid: 'description',
 				name: 'description',
-				content: process.env.npm_package_description || '',
+				content:
+					'Ein Platz wo ich meine Ideen teile und ein paar interessante Dinge nieder zu schreiben.',
+			},
+			{ name: 'HandheldFriendly', content: 'True' },
+			{ property: 'og:site_name', content: '0to100' },
+			{
+				name: 'viewport',
+				content: 'width=device-width, initial-scale=1',
 			},
 			{
 				name: 'msapplication-TileColor',
@@ -34,8 +40,17 @@ export default {
 				name: 'theme-color',
 				content: '#ffffff',
 			},
+			{ property: 'og:image:width', content: '740' },
+			{ property: 'og:image:height', content: '300' },
+			{ name: 'twitter:site', content: '@marcelxpfeifer' },
+			{ name: 'twitter:card', content: 'summary_large_image' },
 		],
 		link: [
+			{
+				hid: 'canonical',
+				rel: 'canonical',
+				href: 'https://0to100.ink',
+			},
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{ rel: 'preconnect', href: 'https://fonts.gstatic.com' },
 			{

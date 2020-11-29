@@ -27,11 +27,93 @@ export default {
 
 		return { article }
 	},
+	computed: {
+		meta() {
+			return {
+				type: 'article',
+				title: this.article.title,
+				description: this.article.description,
+				mainImage: require(`~/assets/Blog/${this.article.img}`),
+			}
+		},
+	},
 	methods: {
 		formatDate(date) {
 			const options = { year: 'numeric', month: 'long', day: 'numeric' }
 			return new Date(date).toLocaleDateString('de', options)
 		},
+	},
+	head() {
+		return {
+			title: `0to100 | ${this.article.title}`,
+			meta: [
+				{
+					property: 'article:published_time',
+					content: this.article.createdAt,
+				},
+				{
+					property: 'article:modified_time',
+					content: this.article.updatedAt,
+				},
+				{
+					hid: 'description',
+					name: 'description',
+					content: this.meta.description,
+				},
+				{
+					hid: 'og:type',
+					property: 'og:type',
+					content: this.meta.type,
+				},
+				{
+					hid: 'og:title',
+					property: 'og:title',
+					content: this.meta.title,
+				},
+				{
+					hid: 'og:description',
+					property: 'og:description',
+					content: this.meta.description,
+				},
+				{
+					hid: 'og:image',
+					property: 'og:image',
+					content: this.meta.mainImage,
+				},
+				{
+					hid: 'twitter:title',
+					name: 'twitter:title',
+					content: this.meta.title,
+				},
+				{
+					hid: 'twitter:description',
+					name: 'twitter:description',
+					content: this.meta.description,
+				},
+				{
+					hid: 'twitter:image',
+					name: 'twitter:image',
+					content: this.meta.mainImage,
+				},
+				{
+					hid: 'og:url',
+					property: 'og:url',
+					content: `https://0to100.ink/${this.$route.fullPath}`,
+				},
+				{
+					hid: 'twitter:url',
+					name: 'twitter:url',
+					content: `https://0to100.ink/${this.$route.fullPath}`,
+				},
+			],
+			link: [
+				{
+					hid: 'canonical',
+					rel: 'canonical',
+					href: `https://0to100.ink/${this.$route.fullPath}`,
+				},
+			],
+		}
 	},
 }
 </script>
