@@ -107,11 +107,12 @@ export default {
 		// Doc: https://github.com/nuxt-community/eslint-module
 		'@nuxtjs/eslint-module',
 		'@nuxtjs/color-mode',
+		'@nuxtjs/pwa',
 	],
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/pwa'],
+	modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/sitemap'],
 	/*
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/
