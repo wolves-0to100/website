@@ -15,9 +15,6 @@ export default {
 	 */
 	head: {
 		title: '0to100',
-		htmlAttrs: {
-			lang: 'de-DE',
-		},
 		meta: [
 			{ charset: 'utf-8' },
 			{
@@ -85,6 +82,9 @@ export default {
 				color: '#f9f9f9',
 			},
 		],
+		htmlAttrs: {
+			lang: 'de',
+		},
 	},
 	/*
 	 ** Global CSS
@@ -111,7 +111,7 @@ export default {
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ['@nuxtjs/pwa', '@nuxt/content'],
+	modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/pwa'],
 	/*
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/
@@ -123,5 +123,25 @@ export default {
 				theme: 'prism-themes/themes/prism-nord.css',
 			},
 		},
+	},
+
+	sitemap: {
+		hostname: 'https://0to100.ink',
+		gzip: true,
+	},
+
+	pwa: {
+		manifest: {
+			lang: 'de',
+			name: '0to100',
+			short_name: '0to100',
+			display: 'standalone',
+			theme_color: '#d90000',
+			background_color: '#ffffff',
+		},
+	},
+
+	generate: {
+		fallback: true,
 	},
 }

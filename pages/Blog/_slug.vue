@@ -3,6 +3,7 @@
 		<img
 			class="img"
 			:src="require(`~/assets/Blog/${article.img}`)"
+			:alt="article.title"
 			loading="lazy"
 		/>
 		<h1>{{ article.title }}</h1>
