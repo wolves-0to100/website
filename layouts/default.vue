@@ -137,6 +137,11 @@ header {
 	z-index: 1;
 	perspective: 1000px;
 
+	@media (max-width: 600px) {
+		height: 80px;
+		padding: 0 20px;
+	}
+
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -148,8 +153,11 @@ header {
 
 	img {
 		cursor: pointer;
-		height: 30%;
+		height: 30px;
 		width: auto;
+		@media (max-width: 600px) {
+			height: 20px;
+		}
 	}
 
 	nav a {

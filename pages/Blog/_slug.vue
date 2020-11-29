@@ -173,11 +173,14 @@ h1 {
 	display: flex;
 	margin: 3rem 0 0;
 	font-size: 0.9rem;
+	@media (max-width: 850px) {
+		flex-direction: column;
+	}
 }
 
 .details {
 	width: auto;
-	max-width: 65%;
+	max-width: 60%;
 	margin-right: 2rem;
 	> * {
 		background-color: #f5f5f5;
@@ -188,10 +191,25 @@ h1 {
 			margin-bottom: 0;
 		}
 	}
+	@media (max-width: 850px) {
+		max-width: 100%;
+		margin-right: 0;
+	}
 }
 .description {
 	p {
 		margin: 1rem 0;
+	}
+}
+
+.dark-mode {
+	.toc {
+		background-color: #111111;
+	}
+	.details {
+		> * {
+			background-color: #111111;
+		}
 	}
 }
 
@@ -219,6 +237,10 @@ h1 {
 
 	.level-3 {
 		padding-left: 0.6em;
+	}
+	@media (max-width: 850px) {
+		margin-top: 1rem;
+		max-width: 100%;
 	}
 }
 </style>
