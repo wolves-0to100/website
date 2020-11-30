@@ -8,4 +8,11 @@
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 10%;
+	max-width: 1080px;
+}
+</style>
