@@ -8,6 +8,7 @@
 					@click="$router.push('/')"
 				/>
 				<nav>
+					<nuxt-link to="/Uses">Uses</nuxt-link>
 					<nuxt-link to="/Blog">Blog</nuxt-link>
 					<nuxt-link to="/Cocktails">Cocktails</nuxt-link>
 					<button aria-label="Color Mode" @click="toggleColorMode">
