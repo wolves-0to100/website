@@ -157,6 +157,14 @@ export default {
 	},
 	head: {
 		title: '0to100 | Uses',
+		meta: [
+			{
+				hid: 'description',
+				name: 'description',
+				content:
+					'Eine Liste von Dinge, welche ich in meinem Alltag benutze.',
+			},
+		],
 	},
 }
 </script>
