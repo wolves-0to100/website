@@ -71,4 +71,10 @@ export default {
 		background-color: rgba(255, 255, 255, 0.8);
 	}
 }
+
+.dark-mode .post {
+	.postInfo {
+		background-color: rgba(26, 26, 26, 0.8);
+	}
+}
 </style>
