@@ -1,18 +1,7 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
-	/*
-	 ** Nuxt rendering mode
-	 ** See https://nuxtjs.org/api/configuration-mode
-	 */
-	mode: 'universal',
-	/*
-	 ** Nuxt target
-	 ** See https://nuxtjs.org/api/configuration-target
-	 */
 	target: 'static',
-	/*
-	 ** Headers of the page
-	 ** See https://nuxtjs.org/api/configuration-head
-	 */
 	head: {
 		title: '0to100',
 		meta: [
@@ -119,6 +108,9 @@ export default {
 	sitemap: {
 		hostname: 'https://0to100.ink',
 		gzip: true,
+		routes() {
+			return getRoutes()
+		},
 	},
 
 	pwa: {
