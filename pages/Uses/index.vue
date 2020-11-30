@@ -217,4 +217,8 @@ section {
 section:nth-child(even) {
 	background-color: #f8f8f8;
 }
+
+.dark-mode section:nth-child(even) {
+	background-color: #222222;
+}
 </style>
