@@ -129,7 +129,7 @@ header {
 	justify-content: center;
 	position: sticky;
 	top: 0;
-	width: 100vw;
+	width: 100%;
 	font-weight: 600;
 	padding: 0 80px;
 	height: 100px;
