@@ -5,7 +5,7 @@
 			v-for="article in articles"
 			:key="article.title"
 			class="post"
-			:to="'Blog/' + article.slug"
+			:to="'/Blog/' + article.slug"
 		>
 			<img
 				:src="require(`~/assets/Blog/${article.img}`)"
