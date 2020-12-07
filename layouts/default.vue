@@ -210,4 +210,9 @@ header {
 .nuxt-content-highlight {
 	font-size: 0.9rem;
 }
+
+code[class*='language-'],
+pre[class*='language-'] {
+	font-family: 'JetBrains Mono';
+}
 </style>

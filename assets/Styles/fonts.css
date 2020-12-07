@@ -55,3 +55,21 @@
 		/* Safari, Android, iOS */
 			url('~assets/Fonts/inter-v2-latin-700.svg#Inter') format('svg'); /* Legacy iOS */
 }
+
+/* jetbrains-mono-regular - latin */
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('~assets/Fonts/jetbrains-mono-v1-latin-regular.eot');
+	src: local(''),
+		url('~assets/Fonts/jetbrains-mono-v1-latin-regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('~assets/Fonts/jetbrains-mono-v1-latin-regular.woff2')
+			format('woff2'),
+		url('~assets/Fonts/jetbrains-mono-v1-latin-regular.woff') format('woff'),
+		url('~assets/Fonts/jetbrains-mono-v1-latin-regular.ttf')
+			format('truetype'),
+		url('~assets/Fonts/jetbrains-mono-v1-latin-regular.svg#JetBrainsMono')
+			format('svg');
+}
