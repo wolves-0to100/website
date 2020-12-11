@@ -14,10 +14,7 @@
 			>
 				Twitter
 			</a>
-			<a
-				href="https://twitch.tv/marcelxpfeifer"
-				rel="noopener noreferrer"
-			>
+			<a href="https://www.twitch.tv/0to100ink" rel="noopener noreferrer">
 				Twitch
 			</a>
 			<a
