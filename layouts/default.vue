@@ -59,67 +59,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-html {
-	font-family: 'Inter', sans-serif;
-	font-size: 16px;
-	word-spacing: 1px;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	margin: 0;
-}
-
-body {
-	transition: all 200ms ease-in-out;
-	background-color: #fff;
-	color: #1a1a1a;
-	a {
-		color: #1a1a1a;
-		&.nuxt-link-active {
-			border-bottom: 1px solid #1a1a1a;
-		}
-	}
-}
-.dark-mode body {
-	background-color: #1a1a1a;
-	color: #e0e0e0;
-	a {
-		color: #e0e0e0;
-		&.nuxt-link-active {
-			border-bottom: 1px solid #e0e0e0;
-		}
-		&:hover {
-			color: #d90000;
-		}
-	}
-}
-
-a {
-	cursor: pointer;
-	transition: color 200ms ease-in-out;
-	text-decoration: none;
-	font-weight: 600;
-	&:hover {
-		color: #d90000;
-	}
-}
-
-button {
-	cursor: pointer;
-	border: none;
-	background-color: transparent;
-	outline: none;
-}
-
+<style lang="scss" scoped>
 .dark-mode header {
 	background: rgba(26, 26, 26, 0.6);
 }
@@ -182,37 +122,5 @@ header {
 			}
 		}
 	}
-}
-
-.nuxt-content {
-	h2,
-	h3,
-	h4 {
-		margin-top: 2em;
-	}
-
-	p,
-	ul,
-	ol {
-		margin: 1rem 0;
-	}
-
-	li {
-		padding-left: 10px;
-	}
-
-	a {
-		text-decoration: none;
-		font-weight: 600;
-	}
-}
-
-.nuxt-content-highlight {
-	font-size: 0.9rem;
-}
-
-code[class*='language-'],
-pre[class*='language-'] {
-	font-family: 'JetBrains Mono';
 }
 </style>
