@@ -15,21 +15,24 @@
 				class="post"
 				:to="'/Blog/' + article.slug"
 			>
-				<div class="postInfo">
+				<card>
 					<h3>{{ article.title }}</h3>
 					<p>{{ article.description }}</p>
 					<p class="date">
 						Veröffentlicht am {{ getDate(article.createdAt) }}
 					</p>
-				</div>
+				</card>
 			</nuxt-link>
 		</div>
 	</div>
 </template>
 
 <script>
+import Card from '~/components/General/Card.vue'
+
 export default {
 	name: 'Blog',
+	components: { Card },
 	async asyncData({ $content }) {
 		const articles = await $content('articles', {
 			deep: true,
@@ -77,8 +80,6 @@ h2 {
 }
 
 .post {
-	display: block;
-	position: relative;
 	h3 {
 		margin-bottom: 1em;
 	}
