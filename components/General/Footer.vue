@@ -62,7 +62,7 @@ footer {
 	a {
 		display: block;
 		font-weight: 400;
-		padding: 6px 0;
+		padding: 4px 0;
 		&:last-child {
 			margin: 0;
 		}
