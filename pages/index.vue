@@ -23,6 +23,7 @@
 				</p>
 			</div>
 			<img
+				loading="lazy"
 				src="~/assets/Images/twitch.jpg"
 				alt="Screenshot der Twitch Webseite"
 			/>
