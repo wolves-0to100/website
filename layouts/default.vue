@@ -30,11 +30,14 @@
 			</div>
 		</header>
 		<Nuxt />
+		<Footer />
 	</div>
 </template>
 
 <script>
+import Footer from '~/components/General/Footer.vue'
 export default {
+	components: { Footer },
 	computed: {
 		currentColor() {
 			return this.$colorMode.value === 'light'
