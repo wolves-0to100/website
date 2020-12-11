@@ -60,6 +60,7 @@ export default {
 	img {
 		height: 100%;
 		width: 50%;
+		object-fit: contain;
 		margin-top: 80px;
 		margin-left: 20px;
 		transition: margin 200ms;
@@ -72,8 +73,14 @@ export default {
 	@media (max-width: 750px) {
 		flex-direction: column;
 		img {
+			margin-top: 20px;
 			margin-left: 0;
 			width: auto;
+		}
+		&:hover {
+			img {
+				margin-top: 20px;
+			}
 		}
 	}
 }
