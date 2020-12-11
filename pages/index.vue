@@ -56,17 +56,17 @@ export default {
 	margin: 4em 0;
 	justify-content: space-between;
 	overflow: hidden;
+	max-height: 420px;
 	img {
+		height: 100%;
 		width: 50%;
 		margin-top: 80px;
 		margin-left: 20px;
-		margin-bottom: -320px;
 		transition: margin 200ms;
 	}
 	&:hover {
 		img {
 			margin-top: 0;
-			margin-bottom: -240px;
 		}
 	}
 	@media (max-width: 750px) {
