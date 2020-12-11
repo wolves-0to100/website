@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import '@/assets/styles/blog.scss'
+import '~/assets/styles/blog.scss'
 
 export default {
 	async asyncData({ $content, params }) {
