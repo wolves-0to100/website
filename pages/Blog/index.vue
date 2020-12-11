@@ -78,6 +78,9 @@ h2 {
 	display: grid;
 	grid-gap: 24px;
 	grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+	@media (max-width: 750px) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .post {
