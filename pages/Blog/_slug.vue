@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import '@/assets/styles/blog.scss'
+
 export default {
 	async asyncData({ $content, params }) {
 		const article = await $content('articles', params.slug).fetch()

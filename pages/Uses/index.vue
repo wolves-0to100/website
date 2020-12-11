@@ -14,30 +14,42 @@
 					<h2>Musik</h2>
 				</div>
 				<div class="tools">
-					<iframe
-						allow="autoplay *; encrypted-media *; fullscreen *"
-						frameborder="0"
-						height="450"
-						:style="iframeStyle"
-						sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-						src="https://embed.music.apple.com/de/playlist/2020-year-mix/pl.u-oZylKLeCPyDvMN?l=en"
-					></iframe>
-					<iframe
-						allow="autoplay *; encrypted-media *; fullscreen *"
-						frameborder="0"
-						height="450"
-						:style="iframeStyle"
-						sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-						src="https://embed.music.apple.com/de/playlist/code/pl.u-xlyNNxdFX7eK1N?l=en"
-					></iframe>
-					<iframe
-						allow="autoplay *; encrypted-media *; fullscreen *"
-						frameborder="0"
-						height="450"
-						:style="iframeStyle"
-						sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-						src="https://embed.music.apple.com/de/playlist/remix-zone/pl.u-NpXmY4VCvx7jPr?l=en"
-					></iframe>
+					<div v-if="acceptCookies">
+						<iframe
+							allow="autoplay *; encrypted-media *; fullscreen *"
+							frameborder="0"
+							height="450"
+							:style="iframeStyle"
+							sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+							src="https://embed.music.apple.com/de/playlist/2020-year-mix/pl.u-oZylKLeCPyDvMN?l=en"
+						></iframe>
+						<iframe
+							allow="autoplay *; encrypted-media *; fullscreen *"
+							frameborder="0"
+							height="450"
+							:style="iframeStyle"
+							sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+							src="https://embed.music.apple.com/de/playlist/code/pl.u-xlyNNxdFX7eK1N?l=en"
+						></iframe>
+						<iframe
+							allow="autoplay *; encrypted-media *; fullscreen *"
+							frameborder="0"
+							height="450"
+							:style="iframeStyle"
+							sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+							src="https://embed.music.apple.com/de/playlist/remix-zone/pl.u-NpXmY4VCvx7jPr?l=en"
+						></iframe>
+					</div>
+					<div v-else>
+						<p>
+							Um die Apple Music Playlists zu sehen musst du
+							Cookies akzeptieren, da die Apple Music Player
+							welche setzen.
+						</p>
+						<button @click="acceptCookies = true">
+							Cookies erlauben
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -51,6 +63,7 @@ export default {
 	components: { usesSection },
 	data() {
 		return {
+			acceptCookies: false,
 			sections: [
 				{
 					title: 'Hardware',
@@ -226,7 +239,26 @@ section:nth-child(even) {
 	background-color: #f8f8f8;
 }
 
-.dark-mode section:nth-child(even) {
-	background-color: #222222;
+button {
+	font-weight: bold;
+	background-color: #fff;
+	margin: 2em 0;
+	padding: 12px 20px;
+	border-radius: 4px;
+	box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.2s;
+	&:hover {
+		box-shadow: 0 0 rgba(0, 0, 0, 0.1);
+	}
+}
+
+.dark-mode {
+	button {
+		color: #f8f8f8;
+		background-color: #292929;
+	}
+	section:nth-child(even) {
+		background-color: #222222;
+	}
 }
 </style>

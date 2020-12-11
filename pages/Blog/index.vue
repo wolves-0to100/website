@@ -1,27 +1,38 @@
 <template>
 	<div class="container">
-		<h1>Posts</h1>
-		<nuxt-link
-			v-for="article in articles"
-			:key="article.title"
-			class="post"
-			:to="'/Blog/' + article.slug"
-		>
-			<img
-				:src="require(`~/assets/Blog/${article.img}`)"
-				:alt="article.title"
-			/>
-			<div class="postInfo">
-				<h2>{{ article.title }}</h2>
-				<p>{{ article.author }}</p>
-			</div>
-		</nuxt-link>
+		<h1>Blog</h1>
+		<p class="introduction">
+			Dies ist mein digitales Notizbuch, um einige Gedanken, Ideen und
+			coole Dinge mit dem Internet zu teilen. Dabei werde ich Versuchen
+			die Artikel in verschiedene Kategorien zu unterteilen. Vermutlich
+			werden die Blogposts eher unregelmäßig enstehen.
+		</p>
+		<h2>Artikel</h2>
+		<div class="posts">
+			<nuxt-link
+				v-for="article in articles"
+				:key="article.title"
+				class="post"
+				:to="'/Blog/' + article.slug"
+			>
+				<card>
+					<h3>{{ article.title }}</h3>
+					<p>{{ article.description }}</p>
+					<p class="date">
+						Veröffentlicht am {{ getDate(article.createdAt) }}
+					</p>
+				</card>
+			</nuxt-link>
+		</div>
 	</div>
 </template>
 
 <script>
+import Card from '~/components/General/Card.vue'
+
 export default {
 	name: 'Blog',
+	components: { Card },
 	async asyncData({ $content }) {
 		const articles = await $content('articles', {
 			deep: true,
@@ -30,6 +41,15 @@ export default {
 		return {
 			articles,
 		}
+	},
+	methods: {
+		getDate(string) {
+			return new Date(string).toLocaleDateString('de-DE', {
+				day: '2-digit',
+				month: 'long',
+				year: 'numeric',
+			})
+		},
 	},
 	head: {
 		title: '0to100 | Blog',
@@ -41,40 +61,39 @@ export default {
 .container {
 	width: 100%;
 	margin: 0 auto;
-	padding: 100px 10%;
+	padding: 100px 40px;
+	min-height: 100vh;
 	max-width: 1080px;
 }
 
-.post {
-	display: block;
-	position: relative;
-	width: 400px;
-	height: 250px;
-	overflow: hidden;
-	img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		object-fit: cover;
-	}
-	.postInfo {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 80px;
-		width: 100%;
-		padding: 12px 20px;
-		font-weight: 400;
-		background-color: rgba(255, 255, 255, 0.8);
-	}
+.introduction {
+	margin: 1em 0 2em;
 }
 
-.dark-mode .post {
-	.postInfo {
-		background-color: rgba(26, 26, 26, 0.8);
+h2 {
+	margin: 2em 0 1em;
+}
+
+.posts {
+	display: grid;
+	grid-gap: 24px;
+	grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+}
+
+.post {
+	h3 {
+		margin-bottom: 1em;
+	}
+	p {
+		font-weight: 400;
+	}
+	.date {
+		font-size: 0.8em;
+		margin-top: 1em;
+	}
+
+	&:hover {
+		color: inherit;
 	}
 }
 </style>
