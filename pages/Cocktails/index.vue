@@ -6,13 +6,6 @@
 
 <script>
 export default {
-	async asyncData({ $content }) {
-		const cocktails = await $content('cocktails', { deep: true }).fetch()
-
-		return {
-			cocktails,
-		}
-	},
 	head: {
 		title: '0to100 | Cocktails',
 	},
