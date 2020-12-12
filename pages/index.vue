@@ -1,15 +1,14 @@
 <template>
 	<div class="container">
-		<h1>0to100</h1>
-		<p>Hey! Mein Name ist Marcel.</p>
+		<h1>Hey! <span class="plane">✈️</span></h1>
 		<p>
-			Schön das du hier gelandet bist. 0to100 ist ein kleines Projekt von
-			mir um meine Ideen, Prozesse und Erlebnisse festzuhalten. In
-			unregelmäßigen Abständen schreibe ich ein paar Blogposts.
-			Zusätzliche streame ich ab und an mal auf Twitch.
+			Schön das du hier gelandet bist. Mein Name ist Marcel. 0to100 ist
+			ein kleines Projekt um meine Ideen, Prozesse und Erlebnisse
+			festzuhalten. In unregelmäßigen Abständen schreibe ich ein paar
+			Blogposts. Zusätzliche streame ich ab und an mal auf Twitch.
 		</p>
 
-		<card>
+		<card @mouseover="animated = true" @mouseleave="animated = false">
 			<div>
 				<h2>Twitch</h2>
 				<p>
@@ -22,11 +21,7 @@
 					<a href="https://www.twitch.tv/0to100ink">Twitch</a>
 				</p>
 			</div>
-			<img
-				loading="lazy"
-				src="~/assets/Images/twitch.jpg"
-				alt="Screenshot der Twitch Webseite"
-			/>
+			<memoji class="memoji" :animated="animated" />
 		</card>
 		<h2>Cocktails</h2>
 		<p>
@@ -37,9 +32,16 @@
 </template>
 
 <script>
+import Memoji from '~/components/General/Memoji.vue'
 import Card from '~/components/General/Card.vue'
+
 export default {
-	components: { Card },
+	components: { Card, Memoji },
+	data() {
+		return {
+			animated: false,
+		}
+	},
 }
 </script>
 
@@ -58,39 +60,39 @@ export default {
 	justify-content: space-between;
 	overflow: hidden;
 	max-height: 420px;
-	img {
+	.memoji {
+		min-width: 40%;
 		height: 100%;
-		width: 50%;
-		margin-top: 80px;
-		margin-left: 20px;
-		transition: margin 200ms;
-	}
-	&:hover {
-		img {
-			margin-top: 0;
-		}
 	}
 	@media (max-width: 750px) {
 		flex-direction: column;
-		img {
-			margin-top: 20px;
-			margin-left: 0;
-			width: 100%;
-		}
-		&:hover {
-			img {
-				margin-top: 20px;
-			}
-		}
 	}
 }
 
-h1 {
-	margin-bottom: 2em;
-}
-
+h1,
 h2,
 p {
 	margin-bottom: 1em;
+}
+
+.plane {
+	display: inline-block;
+	margin-left: 0.25em;
+	animation: landing 4s;
+}
+
+@keyframes landing {
+	0% {
+		transform: translateX(100vw) translateY(-10vh) rotate(-145deg);
+	}
+	20% {
+		transform: translateX(50vw) translateY(0vh) rotate(-135deg);
+	}
+	80% {
+		transform: translateX(0) translateY(0) rotate(-135deg);
+	}
+	100% {
+		transform: translateX(0) translateY(0) rotate(0);
+	}
 }
 </style>
