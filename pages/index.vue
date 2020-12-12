@@ -61,7 +61,6 @@ export default {
 	img {
 		height: 100%;
 		width: 50%;
-		object-fit: contain;
 		margin-top: 80px;
 		margin-left: 20px;
 		transition: margin 200ms;
@@ -76,7 +75,7 @@ export default {
 		img {
 			margin-top: 20px;
 			margin-left: 0;
-			width: auto;
+			width: 100%;
 		}
 		&:hover {
 			img {
