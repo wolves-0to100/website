@@ -113,6 +113,7 @@ export default {
 	sitemap: {
 		hostname: 'https://0to100.ink',
 		gzip: true,
+		exculde: ['/Impressum', '/Datenschutz'],
 		routes() {
 			return getRoutes()
 		},

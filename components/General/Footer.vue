@@ -32,9 +32,14 @@
 		</div>
 		<div>
 			<h2>Seiten</h2>
-			<nuxt-link to="/Uses">Uses</nuxt-link>
-			<nuxt-link to="/Blog">Blog</nuxt-link>
-			<nuxt-link to="/Cocktails">Cocktails</nuxt-link>
+			<nuxt-link to="/uses">Uses</nuxt-link>
+			<nuxt-link to="/blog">Blog</nuxt-link>
+			<nuxt-link to="/cocktails">Cocktails</nuxt-link>
+		</div>
+		<div>
+			<h2>Rechtliches</h2>
+			<nuxt-link to="/datenschutz">Datenschutz</nuxt-link>
+			<nuxt-link to="/impressum">Impressum</nuxt-link>
 		</div>
 		<div class="wolves">
 			<p>Made by <a href="https://wolves.ink">Wolves</a></p>
@@ -56,13 +61,14 @@ footer {
 	margin: 4em auto 2em;
 	padding: 0 80px;
 	max-width: 1360px;
+	font-size: 0.9em;
 	h2 {
 		margin-bottom: 0.5em;
 	}
 	a {
 		display: block;
 		font-weight: 400;
-		padding: 4px 0;
+		padding: 2px 0;
 		&:last-child {
 			margin: 0;
 		}
