@@ -34,9 +34,11 @@ export default {
 	name: 'Blog',
 	components: { Card },
 	async asyncData({ $content }) {
-		const articles = await $content('articles', {
+		const articles = await $content('blog', {
 			deep: true,
-		}).fetch()
+		})
+			.sortBy('createdAt', 'desc')
+			.fetch()
 
 		return {
 			articles,
