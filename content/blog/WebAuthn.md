@@ -4,7 +4,6 @@ description: Eine Einleitung in das Thema Web Authentication und warum es eine b
 author: Marcel Pfeifer
 img: webAuthn.jpg
 tags: tech
-readingTime: 4min
 createdAt: 2020-11-29
 updatedAt: 2020-11-29
 ---

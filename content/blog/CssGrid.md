@@ -4,7 +4,6 @@ description: CSS Grid wird von allen modernen Browsern unterstützt. Dieser Arti
 author: Marcel Pfeifer
 img: cssGrid.jpg
 tags: tech
-readingTime: 1min
 createdAt: 2020-12-12
 updatedAt: 2020-12-12
 ---

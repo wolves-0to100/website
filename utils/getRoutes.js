@@ -1,6 +1,7 @@
 export default async () => {
 	const { $content } = require('@nuxt/content')
-	const files = await $content({ deep: true }).only(['path']).fetch()
+	const blogposts = await $content('blog').only(['path']).fetch()
 
-	return files.map((file) => (file.path === '/index' ? '/' : file.path))
+	console.log(blogposts)
+	return blogposts.map((file) => (file.path === '/index' ? '/' : file.path))
 }
