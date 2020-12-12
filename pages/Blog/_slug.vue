@@ -221,6 +221,7 @@ h1 {
 	background-color: #f5f5f5;
 	border-radius: 12px;
 	padding: 1.5rem 2rem;
+	min-width: 36%;
 
 	.nuxt-link-active {
 		border: none;
