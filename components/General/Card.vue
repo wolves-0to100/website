@@ -1,5 +1,10 @@
 <template>
-	<div class="card">
+	<div
+		class="card"
+		@mousemove="$emit('mouseover')"
+		@mouseleave="$emit('mouseleave')"
+		@click="$emit('click')"
+	>
 		<slot></slot>
 	</div>
 </template>
