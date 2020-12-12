@@ -14,7 +14,7 @@
 					<p><b>Beschreibung</b></p>
 					<p>{{ article.description }}</p>
 				</div>
-				<p>Lesezeit: {{ article.readingTime }}</p>
+				<p>Lesezeit: {{ article.readingTime }} Minuten</p>
 			</div>
 			<ul class="toc">
 				<li v-for="link of article.toc" :key="link.id">
@@ -39,7 +39,7 @@ import '~/assets/Styles/blog.scss'
 
 export default {
 	async asyncData({ $content, params }) {
-		const article = await $content('articles', params.slug).fetch()
+		const article = await $content('blog', params.slug).fetch()
 
 		return { article }
 	},

@@ -109,14 +109,23 @@ export default {
 			},
 		},
 	},
+	hooks: {
+		'content:file:beforeInsert': (document) => {
+			if (document.extension === '.md') {
+				const { minutes } = require('reading-time')(document.text)
+
+				document.readingTime = Math.round(minutes)
+			}
+		},
+	},
 
 	sitemap: {
 		hostname: 'https://0to100.ink',
 		gzip: true,
-		exculde: ['/Impressum', '/Datenschutz'],
 		routes() {
 			return getRoutes()
 		},
+		exculde: ['/impressum', '/datenschutz'],
 	},
 
 	pwa: {
