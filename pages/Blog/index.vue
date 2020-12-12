@@ -13,7 +13,7 @@
 				v-for="article in articles"
 				:key="article.title"
 				class="post"
-				:to="'/Blog/' + article.slug"
+				:to="'/blog/' + article.slug"
 			>
 				<card>
 					<h3>{{ article.title }}</h3>
