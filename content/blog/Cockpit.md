@@ -187,3 +187,9 @@ In dieser Liste führe ich einige meiner lieblings Addons:
 Es lohnt sich auf jeden Fall mal einen Blick auf Cockpit CMS zu richten. Trotz seiner geringen Bekanntheit umfasst es viele Funktionen, welche selbst bei manchen größeren CMS auf sich warten lassen. Mir persönlich macht die Arbeit mit Cockpit sehr viel Spaß, auch wenn einen die Dokumentation ab und an mal zu längeren Googlesuchen treibt.
 
 Wer auf der Suche nach einem selbstgehosteten CMS wird schell feststellen, wie einfach die Bedienung und Nutzung von Cockpit ist.
+
+### Links
+
+-   [Webseite](https://getcockpit.com)
+-   [GitHub](https://github.com/agentejo/cockpit)
+-   [Twitter](https://twitter.com/getcockpit)
