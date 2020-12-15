@@ -152,6 +152,7 @@ article {
 	pointer-events: none;
 	user-select: none;
 	opacity: 0.2;
+	z-index: -1;
 }
 
 h1 {
