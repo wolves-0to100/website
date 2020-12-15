@@ -66,8 +66,8 @@
 					schief. Schau doch gerne mal vorbei.
 				</p>
 				<p>
-					Dabei fangen wir bei bei 0 an und erstellen alles on Stream.
-					Egal ob Overlay, Alerts oder eben eins der Projekte.
+					Dabei fangen wir immer bei 0 an und erstellen alles on
+					Stream. Egal ob Overlay, Alerts oder eben eins der Projekte.
 				</p>
 				<p>
 					Darfür einfach nur hier lang!
