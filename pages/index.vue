@@ -8,13 +8,66 @@
 			Blogposts. Zusätzliche streame ich ab und an mal auf Twitch.
 		</p>
 
+		<section>
+			<h2>Links</h2>
+			<div class="links">
+				<div>
+					<a
+						href="https://instagram.com/marcelxpfeifer"
+						rel="noopener noreferrer"
+					>
+						Instagram
+					</a>
+					<p>
+						Hier teile ich ein paar Eindrücke zu meinen Projekten
+						und halte euch mit Storys über aktuelle Ereignisse auf
+						dem Laufendem.
+					</p>
+				</div>
+				<div>
+					<a href="/blog">Blog</a>
+					<p>
+						Mein Blog ist mein digitales Notizbuch, um einige
+						Gedanken, Ideen und coole Dinge mit dem Internet zu
+						teilen.
+					</p>
+				</div>
+				<div>
+					<a href="https://flags.0to100.ink">Twitch Spiele</a>
+					<p>
+						Aktuell gibt es nur ein Spiel, welches wir zusammen im
+						Stream gebaut haben. Bald gibt es hier hoffentlich mehr.
+					</p>
+				</div>
+				<div>
+					<a href="/cocktails">Cocktails</a>
+					<p>
+						Ab 2021 werde ich wöchentlich Cocktail Rezepte posten.
+						Wir werden dafür noch dieses Jahr eine App zusammen
+						bauen.
+					</p>
+				</div>
+				<div>
+					<a href="https://wolves.ink">Meine Firma</a>
+					<p>
+						Wolves ist meine Firma über welche ich Anwendungen und
+						Apps veröffentliche.
+					</p>
+				</div>
+			</div>
+		</section>
+
 		<card @mouseover="animated = true" @mouseleave="animated = false">
 			<div>
 				<h2>Twitch</h2>
 				<p>
-					Mal baue ich Apps, mal Spiele und manchmal auch Webseiten.
-					Nur eins ist sicher! Irgendwas läuft immer schief. Schau
-					doch gerne mal vorbei.
+					Seit beginn 2020 baue ich mal Apps, mal Spiele und manchmal
+					auch Webseiten. Nur eins ist sicher! Irgendwas läuft immer
+					schief. Schau doch gerne mal vorbei.
+				</p>
+				<p>
+					Dabei fangen wir bei bei 0 an und erstellen alles on Stream.
+					Egal ob Overlay, Alerts oder eben eins der Projekte.
 				</p>
 				<p>
 					Darfür einfach nur hier lang!
@@ -23,11 +76,6 @@
 			</div>
 			<memoji class="memoji" :animated="animated" />
 		</card>
-		<h2>Cocktails</h2>
-		<p>
-			Ab 2021 werde ich wöchentlich Cocktail Rezepte posten. Schau gerne
-			bald wieder vorbei.
-		</p>
 	</div>
 </template>
 
@@ -79,6 +127,40 @@ p {
 	display: inline-block;
 	margin-left: 0.25em;
 	animation: landing 4s;
+}
+
+section {
+	margin: 4em 0 2em;
+	h2 {
+		font-size: 0.8em;
+	}
+}
+
+.links {
+	display: grid;
+	grid-gap: 1em 2em;
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	a {
+		display: inline-block;
+		position: relative;
+		margin-bottom: 6px;
+		&::after {
+			content: '->';
+			position: absolute;
+			right: -20px;
+			letter-spacing: 0;
+		}
+	}
+	p {
+		font-size: 0.9em;
+		color: rgb(96, 96, 96);
+	}
+}
+
+.dark-mode {
+	.links p {
+		color: rgb(146, 146, 146);
+	}
 }
 
 @keyframes landing {

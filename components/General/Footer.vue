@@ -23,12 +23,6 @@
 			>
 				GitLab
 			</a>
-			<a
-				href="https://linkedin.com/in/marcelxpfeifer"
-				rel="noopener noreferrer"
-			>
-				LinkedIn
-			</a>
 		</div>
 		<div>
 			<h2>Seiten</h2>
