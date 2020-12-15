@@ -61,7 +61,7 @@
 			<div>
 				<h2>Twitch</h2>
 				<p>
-					Seit beginn 2020 baue ich mal Apps, mal Spiele und manchmal
+					Seit Beginn 2020 baue ich mal Apps, mal Spiele und manchmal
 					auch Webseiten. Nur eins ist sicher! Irgendwas läuft immer
 					schief. Schau doch gerne mal vorbei.
 				</p>
