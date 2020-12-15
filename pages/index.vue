@@ -140,6 +140,9 @@ section {
 	display: grid;
 	grid-gap: 1em 2em;
 	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	@media (max-width: 750px) {
+		grid-template-columns: 1fr;
+	}
 	a {
 		display: inline-block;
 		position: relative;
