@@ -107,10 +107,10 @@ export default {
 	margin: 4em 0;
 	justify-content: space-between;
 	overflow: hidden;
-	max-height: 420px;
 	.memoji {
 		min-width: 40%;
 		height: 100%;
+		min-height: 180px;
 	}
 	@media (max-width: 750px) {
 		flex-direction: column;
