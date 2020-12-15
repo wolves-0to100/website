@@ -343,24 +343,21 @@ export default {
 #leftFoot,
 #rightFoot {
 	transform-origin: 50% 100%;
-	animation: none;
 }
 
 #head {
 	transform-origin: 50% 100%;
 	transform: translate(132.5px, 224.528px);
-	animation: none;
 }
 
 #wolfHead {
 	transform-origin: 50% 100%;
 	transform: translate(65.633px, 58.925px);
-	animation: none;
 }
 
 .head {
 	transform-origin: 50% 100%;
-	animation: none;
+	transform: rotate(0deg);
 }
 
 .animated {
