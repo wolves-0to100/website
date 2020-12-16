@@ -91,7 +91,6 @@ h2 {
 	right: 25px;
 	padding: 5px 12px;
 	border-radius: 8px;
-	color: #1a1a1a;
 	box-shadow: 2px 2px 8px 2px rgba(165, 165, 165, 0.08);
 	display: inline-block;
 	font-size: 12px;
@@ -123,6 +122,12 @@ h2 {
 
 	&:hover {
 		color: inherit;
+	}
+}
+
+.dark-mode {
+	.tag {
+		box-shadow: 2px 2px 8px 2px rgba(100, 100, 100, 0.08);
 	}
 }
 </style>
