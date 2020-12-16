@@ -94,7 +94,7 @@ export default {
 				{
 					hid: 'og:image',
 					property: 'og:image',
-					content: this.meta.mainImage,
+					content: `https://0to100.ink/${this.meta.mainImage}`,
 				},
 				{
 					hid: 'twitter:title',
@@ -109,7 +109,7 @@ export default {
 				{
 					hid: 'twitter:image',
 					name: 'twitter:image',
-					content: this.meta.mainImage,
+					content: `https://0to100.ink/${this.meta.mainImage}`,
 				},
 				{
 					hid: 'og:url',
