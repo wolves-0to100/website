@@ -5,7 +5,7 @@
 			Dies ist mein digitales Notizbuch, um einige Gedanken, Ideen und
 			coole Dinge mit dem Internet zu teilen. Dabei werde ich Versuchen
 			die Artikel in verschiedene Kategorien zu unterteilen. Vermutlich
-			werden die Blogposts eher unregelmäßig enstehen.
+			werden die Blogposts eher unregelmäßig entstehen.
 		</p>
 		<h2>Artikel</h2>
 		<div class="posts">
@@ -17,6 +17,7 @@
 			>
 				<card>
 					<h3>{{ article.title }}</h3>
+					<span class="tag">{{ article.tags }}</span>
 					<p>{{ article.description }}</p>
 					<p class="date">
 						Veröffentlicht am {{ getDate(article.createdAt) }}
@@ -55,6 +56,14 @@ export default {
 	},
 	head: {
 		title: '0to100 | Blog',
+		meta: [
+			{
+				hid: 'description',
+				name: 'description',
+				content:
+					'Dies ist mein digitales Notizbuch, um einige Gedanken, Ideen und coole Dinge mit dem Internet zu teilen.',
+			},
+		],
 	},
 }
 </script>
@@ -76,6 +85,19 @@ h2 {
 	margin: 2em 0 1em;
 }
 
+.tag {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	padding: 5px 12px;
+	border-radius: 8px;
+	color: #1a1a1a;
+	box-shadow: 2px 2px 8px 2px rgba(165, 165, 165, 0.08);
+	display: inline-block;
+	font-size: 12px;
+	z-index: -1;
+}
+
 .posts {
 	display: grid;
 	grid-gap: 24px;
@@ -86,7 +108,9 @@ h2 {
 }
 
 .post {
+	position: relative;
 	h3 {
+		margin-right: 50px;
 		margin-bottom: 1em;
 	}
 	p {
