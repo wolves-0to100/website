@@ -94,7 +94,7 @@ export default {
 				{
 					hid: 'og:image',
 					property: 'og:image',
-					content: `https://0to100.ink/${this.meta.mainImage}`,
+					content: `https://0to100.ink${this.meta.mainImage}`,
 				},
 				{
 					hid: 'twitter:title',
@@ -109,24 +109,24 @@ export default {
 				{
 					hid: 'twitter:image',
 					name: 'twitter:image',
-					content: `https://0to100.ink/${this.meta.mainImage}`,
+					content: `https://0to100.ink${this.meta.mainImage}`,
 				},
 				{
 					hid: 'og:url',
 					property: 'og:url',
-					content: `https://0to100.ink/${this.$route.fullPath}`,
+					content: `https://0to100.ink${this.$route.fullPath}`,
 				},
 				{
 					hid: 'twitter:url',
 					name: 'twitter:url',
-					content: `https://0to100.ink/${this.$route.fullPath}`,
+					content: `https://0to100.ink${this.$route.fullPath}`,
 				},
 			],
 			link: [
 				{
 					hid: 'canonical',
 					rel: 'canonical',
-					href: `https://0to100.ink/${this.$route.fullPath}`,
+					href: `https://0to100.ink${this.$route.fullPath}`,
 				},
 			],
 		}
