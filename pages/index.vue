@@ -25,7 +25,7 @@
 					</p>
 				</div>
 				<div>
-					<a href="/blog">Blog</a>
+					<nuxt-link to="/blog">Blog</nuxt-link>
 					<p>
 						Mein Blog ist mein digitales Notizbuch, um einige
 						Gedanken, Ideen und coole Dinge mit dem Internet zu
@@ -40,7 +40,7 @@
 					</p>
 				</div>
 				<div>
-					<a href="/cocktails">Cocktails</a>
+					<nuxt-link to="/cocktails">Cocktails</nuxt-link>
 					<p>
 						Ab 2021 werde ich wöchentlich Cocktail Rezepte posten.
 						Wir werden dafür noch dieses Jahr eine App zusammen
