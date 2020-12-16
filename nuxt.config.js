@@ -10,7 +10,7 @@ export default {
 				hid: 'description',
 				name: 'description',
 				content:
-					'Ein Platz wo ich meine Ideen teile und ein paar interessante Dinge nieder zu schreiben.',
+					'Schön das du hier gelandet bist. Mein Name ist Marcel. 0to100 ist ein kleines Projekt um meine Ideen, Prozesse und Erlebnisse festzuhalten.',
 			},
 			{ name: 'HandheldFriendly', content: 'True' },
 			{ property: 'og:site_name', content: '0to100' },
