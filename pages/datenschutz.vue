@@ -246,6 +246,9 @@ export default {
 	padding: 100px 10%;
 	min-height: 100vh;
 	max-width: 1080px;
+	@media (min-width: 1600px) {
+		padding: 100px 160px;
+	}
 }
 
 h1,

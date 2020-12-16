@@ -140,6 +140,9 @@ article {
 	margin: 0 auto;
 	padding: 100px 10%;
 	max-width: 1080px;
+	@media (min-width: 1600px) {
+		padding: 100px 160px;
+	}
 }
 
 .img {
