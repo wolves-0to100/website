@@ -35,8 +35,6 @@
 </template>
 
 <script>
-import '~/assets/Styles/blog.scss'
-
 export default {
 	async asyncData({ $content, params }) {
 		const article = await $content('blog', params.slug).fetch()
@@ -133,6 +131,40 @@ export default {
 	},
 }
 </script>
+
+<style lang="scss">
+.nuxt-content {
+	h2,
+	h3,
+	h4 {
+		margin-top: 2em;
+	}
+
+	p,
+	ul,
+	ol {
+		margin: 1rem 0;
+	}
+
+	li {
+		padding-left: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: 600;
+	}
+}
+
+.nuxt-content-highlight {
+	font-size: 0.9rem;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+	font-family: 'JetBrains Mono';
+}
+</style>
 
 <style lang="scss" scoped>
 article {
