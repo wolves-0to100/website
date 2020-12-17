@@ -129,7 +129,7 @@ export default {
 		routes() {
 			return getRoutes()
 		},
-		trailingSlash: false,
+		trailingSlash: true,
 		exculde: ['/impressum', '/datenschutz'],
 	},
 
