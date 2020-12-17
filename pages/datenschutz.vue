@@ -236,6 +236,18 @@
 <script>
 export default {
 	name: 'Datenschutz',
+	head() {
+		return {
+			title: `0to100 | Datenschutz`,
+			link: [
+				{
+					hid: 'canonical',
+					rel: 'canonical',
+					href: `https://0to100.ink${this.$route.fullPath}`,
+				},
+			],
+		}
+	},
 }
 </script>
 

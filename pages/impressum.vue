@@ -33,6 +33,18 @@
 <script>
 export default {
 	name: 'Impressum',
+	head() {
+		return {
+			title: `0to100 | Impressum`,
+			link: [
+				{
+					hid: 'canonical',
+					rel: 'canonical',
+					href: `https://0to100.ink${this.$route.fullPath}`,
+				},
+			],
+		}
+	},
 }
 </script>
 

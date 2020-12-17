@@ -64,6 +64,13 @@ export default {
 					'Dies ist mein digitales Notizbuch, um einige Gedanken, Ideen und coole Dinge mit dem Internet zu teilen.',
 			},
 		],
+		link: [
+			{
+				hid: 'canonical',
+				rel: 'canonical',
+				href: `https://0to100.ink/blog`,
+			},
+		],
 	},
 }
 </script>
