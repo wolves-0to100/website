@@ -119,12 +119,17 @@ export default {
 		},
 	},
 
+	router: {
+		trailingSlash: false,
+	},
+
 	sitemap: {
 		hostname: 'https://0to100.ink',
 		gzip: true,
 		routes() {
 			return getRoutes()
 		},
+		trailingSlash: false,
 		exculde: ['/impressum', '/datenschutz'],
 	},
 
