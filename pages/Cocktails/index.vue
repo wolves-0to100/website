@@ -8,6 +8,13 @@
 export default {
 	head: {
 		title: '0to100 | Cocktails',
+		link: [
+			{
+				hid: 'canonical',
+				rel: 'canonical',
+				href: `https://0to100.ink/cocktails`,
+			},
+		],
 	},
 }
 </script>
