@@ -4,8 +4,8 @@ description: Wir bauen eine App für Cocktail Rezepte. Von der Backend Struktur 
 author: Marcel Pfeifer
 img: cocktailApp.jpg
 tags: twitch
-createdAt: 2020-12-17
-updatedAt: 2020-12-17
+createdAt: 2020-12-18
+updatedAt: 2020-12-21
 ---
 
 ## Einleitung
@@ -56,4 +56,4 @@ Im ersten Stream haben wir das Backend eingerichtet und unsere Collections angel
 
 ## Fazit
 
-Wir sind noch voll dabei das Projekt umzusetzten. Schau doch gerne mal vorbei. Falls du Fragen hast kannst du die gerne auch im Chat fragen wenn ich Live bin.
+Wir sind noch voll dabei das Projekt umzusetzten. Schau doch gerne mal vorbei. Falls du Fragen hast, kannst du sie gerne auch im Chat fragen wenn ich Live bin.
