@@ -1,18 +1,18 @@
 <template>
 	<div class="container">
-		<h1>Cocktails</h1>
+		<h1>Projekte</h1>
 	</div>
 </template>
 
 <script>
 export default {
 	head: {
-		title: '0to100 | Cocktails',
+		title: '0to100 | Projekte',
 		link: [
 			{
 				hid: 'canonical',
 				rel: 'canonical',
-				href: `https://0to100.ink/cocktails`,
+				href: `https://0to100.ink/projekte`,
 			},
 		],
 	},
