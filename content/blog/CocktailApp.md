@@ -5,7 +5,7 @@ author: Marcel Pfeifer
 img: cocktailApp.jpg
 tags: twitch
 createdAt: 2020-12-18
-updatedAt: 2020-12-21
+updatedAt: 2020-12-20
 ---
 
 ## Einleitung
