@@ -28,7 +28,7 @@
 			<h2>Seiten</h2>
 			<nuxt-link to="/uses">Uses</nuxt-link>
 			<nuxt-link to="/blog">Blog</nuxt-link>
-			<nuxt-link to="/cocktails">Cocktails</nuxt-link>
+			<nuxt-link to="/projekte">Projekte</nuxt-link>
 		</div>
 		<div>
 			<h2>Rechtliches</h2>
