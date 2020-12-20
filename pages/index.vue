@@ -40,7 +40,7 @@
 					</p>
 				</div>
 				<div>
-					<nuxt-link to="/cocktails">Cocktails</nuxt-link>
+					<a href="https://cocktails.ink">Cocktails</a>
 					<p>
 						Ab 2021 werde ich wöchentlich Cocktail Rezepte posten.
 						Wir werden dafür noch dieses Jahr eine App zusammen
