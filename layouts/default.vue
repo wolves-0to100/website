@@ -10,7 +10,7 @@
 				<nav>
 					<nuxt-link to="/uses">Uses</nuxt-link>
 					<nuxt-link to="/blog">Blog</nuxt-link>
-					<nuxt-link to="/cocktails">Cocktails</nuxt-link>
+					<nuxt-link to="/projekte">Projekte</nuxt-link>
 					<button aria-label="Color Mode" @click="toggleColorMode">
 						<svg
 							fill="none"
