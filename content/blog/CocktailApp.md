@@ -5,7 +5,7 @@ author: Marcel Pfeifer
 img: cocktailApp.jpg
 tags: twitch
 createdAt: 2020-12-18
-updatedAt: 2020-12-20
+updatedAt: 2020-12-22
 ---
 
 ## Einleitung
@@ -46,13 +46,25 @@ Wie bereits erwähnt, benutzen wir Cockpit CMS im Backend. Wer mehr darüber erf
 
 ### Frontend
 
-Joa machen wir bald!
+Für das Frontend haben wir uns für NuxtJS entschieden. Um mit einer einzigen Codebase für die Webseite, Android App und iOS App zu arbeiten benutzen wir ebenfalls CapacitorJS im Frontend.
 
 ## Umsetzung
 
 **17.12.2020**
 
 Im ersten Stream haben wir das Backend eingerichtet und unsere Collections angelegt. Dabei haben wir Cockpit ein bisschen näher kennengelernt und uns Gedanken über die allgemeine Struktur gemacht.
+
+**21.12.2020 Stream 1**
+
+Wir haben nochmal kleine Anpassungen im Backend vorgenommen und sind dann übergegangen zum Logodesign für die App. Darauf folgte das Aufsetzten des Projekts und einrichten aller Frameworks.
+
+**21.12.2020 Stream 2**
+
+Am Abend haben wir nochmal ein paar weitere Vorbereitungen für uns Frontend getroffen. Dabei haben wir Internationalisierung, einen Dark Mode und eine Sitemap für die Webseite integriert. Ebenfalls haben wir Safe Areas für die mobilen Anwendungen integriert.
+
+**22.12.2020**
+
+:)
 
 ## Fazit
 
