@@ -64,7 +64,7 @@ Am Abend haben wir nochmal ein paar weitere Vorbereitungen für uns Frontend get
 
 **22.12.2020**
 
-:)
+Tag 3 und so langsam wird eine App sichtbar. Heute haben wir die App mit dem API verbunden. Ebenfalls haben wir Angefangen die Homepage zu designen und umzusetzen.
 
 ## Fazit
 
