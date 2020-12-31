@@ -59,7 +59,7 @@ export default {
 	},
 	head() {
 		return {
-			title: `0to100 | ${this.article.title}`,
+			title: `${this.article.title} | 0to100`,
 			meta: [
 				{
 					property: 'article:published_time',
@@ -153,6 +153,12 @@ export default {
 	a {
 		text-decoration: none;
 		font-weight: 600;
+	}
+	th {
+		text-align: left;
+	}
+	td {
+		padding: 0.2em 2em 0.2em 0;
 	}
 }
 
