@@ -56,6 +56,7 @@ img {
 	transition: margin 200ms;
 	margin: 10% auto -20%;
 	width: 40%;
+	height: 100%;
 	@media (max-width: 750px) {
 		width: 60%;
 	}
