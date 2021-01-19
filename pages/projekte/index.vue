@@ -1,6 +1,11 @@
 <template>
 	<div class="container">
 		<h1>Projekte</h1>
+		<p class="introduction">
+			Hier findest du einige Projekte, welche wir zusammen auf 0to100
+			gebaut haben. Zu den meisten Projekten schreibe ich ebenfalls einen
+			Blogpost um die unsere Prozesse festzuhalten.
+		</p>
 		<ProjectCard class="project" img="cocktails">
 			<h2>Minimal Cocktails</h2>
 			<p>
@@ -40,6 +45,12 @@ export default {
 		title: '0to100 | Projekte',
 		link: [
 			{
+				hid: 'description',
+				name: 'description',
+				content:
+					'Hier findest du einige Projekte, welche wir zusammen auf 0to100 gebaut haben.',
+			},
+			{
 				hid: 'canonical',
 				rel: 'canonical',
 				href: `https://0to100.ink/projekte`,
@@ -59,6 +70,10 @@ export default {
 	@media (min-width: 1600px) {
 		padding: 100px 160px;
 	}
+}
+
+.introduction {
+	margin: 1em 0 2em;
 }
 
 .project {
