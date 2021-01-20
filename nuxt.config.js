@@ -66,6 +66,14 @@ export default {
 				color: '#f9f9f9',
 			},
 		],
+		script: [
+			{
+				async: true,
+				defer: true,
+				'data-website-id': 'c18f2cfa-937c-4daa-965e-1aa9f37ddd64',
+				src: 'https://umami.wolves.ink/umami.js',
+			},
+		],
 		htmlAttrs: {
 			lang: 'de',
 		},
