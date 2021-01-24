@@ -36,6 +36,12 @@ Eine Sammlung kleiner Spiele für Streamer und ihre Zuschauer
 
 -   [Twitch Games](https://games.0to100.ink)
 
+### !twitter
+
+Ein Link zu meinem Twitterprofil
+
+-   [Twitter](https://twitter.com/marcelxpfeifer)
+
 ### !blog
 
 Mein Blog ist mein digitales Notizbuch
