@@ -25,7 +25,7 @@
 					</p>
 				</div>
 				<div>
-					<nuxt-link to="/blog">Blog</nuxt-link>
+					<nuxt-link to="/blog/">Blog</nuxt-link>
 					<p>
 						Mein Blog ist mein digitales Notizbuch, um einige
 						Gedanken, Ideen und coole Dinge mit dem Internet zu
