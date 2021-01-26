@@ -163,11 +163,11 @@ export default {
 	sitemap: {
 		hostname: 'https://0to100.ink',
 		gzip: true,
+		exculde: ['/impressum/', '/datenschutz/'],
 		routes() {
 			return getRoutes()
 		},
 		trailingSlash: true,
-		exculde: ['/impressum', '/datenschutz'],
 	},
 
 	pwa: {
