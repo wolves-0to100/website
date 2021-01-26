@@ -14,7 +14,7 @@
 				neue Cocktails. Für die Umsetzung haben wir Cockpit CMS und eine
 				Single Codebase benutzt. Mehr über den Entwicklungprozess kannst
 				du hier lesen:
-				<nuxt-link to="/blog/CocktailApp">Blogpost</nuxt-link>
+				<nuxt-link to="/blog/CocktailApp/">Blogpost</nuxt-link>
 			</p>
 			<div class="links">
 				<h3>Jetzt herunterladen:</h3>
