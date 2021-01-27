@@ -84,10 +84,6 @@ header {
 		padding: 0 20px;
 	}
 
-	.logo {
-		border-bottom: none;
-	}
-
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -95,6 +91,10 @@ header {
 		height: 100%;
 		width: 100%;
 		max-width: 1200px;
+
+		.logo {
+			border-bottom: none;
+		}
 	}
 
 	img {
