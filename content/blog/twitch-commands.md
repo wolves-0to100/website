@@ -5,7 +5,7 @@ author: Marcel Pfeifer
 img: twitch.jpg
 tags: twitch
 createdAt: 2021-01-19
-updatedAt: 2021-01-19
+updatedAt: 2021-01-29
 ---
 
 ## Einleitung
@@ -65,3 +65,11 @@ Zeug was ich benutze
 Alle Projekte sind auf GitLab zu finden:
 
 -   [GitLab](https://gitlab.com/0to100)
+
+### !hosting
+
+Hier gibts die Infos zu meinem Hostinganbietern:
+
+-   [Surge](https://surge.sh)
+-   [Hetzner (Partnerlink)](https://hetzner.cloud/?ref=dQDPThEXNAM1)
+-   [All-Inkl (Partnerlink)](https://all-inkl.com/PA44DDC7C5F5675)
