@@ -2,15 +2,13 @@
 	<div>
 		<header>
 			<div class="wrapper">
-				<img
-					:src="logoLink"
-					alt="0to100 Logo"
-					@click="$router.push('/')"
-				/>
+				<nuxt-link to="/" class="logo">
+					<img :src="logoLink" alt="0to100 Logo" />
+				</nuxt-link>
 				<nav>
-					<nuxt-link to="/uses">Uses</nuxt-link>
-					<nuxt-link to="/blog">Blog</nuxt-link>
-					<nuxt-link to="/projekte">Projekte</nuxt-link>
+					<nuxt-link to="/uses/">Uses</nuxt-link>
+					<nuxt-link to="/blog/">Blog</nuxt-link>
+					<nuxt-link to="/projekte/">Projekte</nuxt-link>
 					<button aria-label="Color Mode" @click="toggleColorMode">
 						<svg
 							fill="none"
@@ -93,6 +91,10 @@ header {
 		height: 100%;
 		width: 100%;
 		max-width: 1200px;
+
+		.logo {
+			border-bottom: none;
+		}
 	}
 
 	img {

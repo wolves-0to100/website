@@ -66,10 +66,6 @@ Am Abend haben wir nochmal ein paar weitere Vorbereitungen für uns Frontend get
 
 Tag 3 und so langsam wird eine App sichtbar. Heute haben wir die App mit dem API verbunden. Ebenfalls haben wir Angefangen die Homepage zu designen und umzusetzen.
 
-**23.12.2020**
-
-Der letzte Stream vor Weihnachten.
-
 ## Fazit
 
 Wir sind noch voll dabei das Projekt umzusetzten. Schau doch gerne mal vorbei. Falls du Fragen hast, kannst du sie gerne auch im Chat fragen wenn ich Live bin.

@@ -59,7 +59,7 @@ export default {
 	},
 	head() {
 		return {
-			title: `0to100 | ${this.article.title}`,
+			title: `${this.article.title} | 0to100`,
 			meta: [
 				{
 					property: 'article:published_time',
@@ -154,6 +154,23 @@ export default {
 		text-decoration: none;
 		font-weight: 600;
 	}
+	table {
+		margin: 1em 0;
+	}
+	th {
+		text-align: left;
+	}
+	tr {
+		height: 1em;
+	}
+	td {
+		vertical-align: top;
+		padding: 0.2em 2em 0.2em 0;
+	}
+
+	a.nuxt-link-active {
+		border-bottom: none;
+	}
 }
 
 .nuxt-content-highlight {
@@ -193,6 +210,9 @@ article {
 h1 {
 	font-size: 3rem;
 	font-weight: 700;
+	@media (max-width: 600px) {
+		font-size: 2.2rem;
+	}
 }
 
 .author {

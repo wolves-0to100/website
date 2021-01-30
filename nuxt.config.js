@@ -33,7 +33,7 @@ export default {
 			{
 				name: 'keywords',
 				content:
-					'Marcel Pfeifer, Wolves, 0to100, Frontend, Developer, Development, Entwickler, Designer, Design, User Experience, User Interface, User, Interface, Experience, twitch, student, webdesign, webdesigner, UX, UI, Product, vue, vuejs, nuxtjs, css, scss, html, javascript',
+					'Marcel Pfeifer, Wolves, 0to100, Blog, Cocktails, twitch, Games, Spiele, Frontend, Developer, Development, Entwickler, Designer, Design, User Experience, User Interface, User, Interface, Experience, student, webdesign, webdesigner, UX, UI, Product, vue, vuejs, nuxtjs, css, scss, html, javascript',
 			},
 		],
 		link: [
@@ -66,6 +66,14 @@ export default {
 				color: '#f9f9f9',
 			},
 		],
+		script: [
+			{
+				async: true,
+				defer: true,
+				'data-website-id': 'c18f2cfa-937c-4daa-965e-1aa9f37ddd64',
+				src: 'https://umami.wolves.ink/umami.js',
+			},
+		],
 		htmlAttrs: {
 			lang: 'de',
 		},
@@ -96,7 +104,12 @@ export default {
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ['@nuxtjs/pwa', '@nuxt/content', '@nuxtjs/sitemap'],
+	modules: [
+		'@nuxtjs/pwa',
+		'@nuxt/content',
+		'@nuxtjs/sitemap',
+		'@nuxtjs/redirect-module',
+	],
 	/*
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/
@@ -119,18 +132,42 @@ export default {
 		},
 	},
 
+	redirect: [
+		{ from: '^/blog/Cockpit(.*)$', to: '/blog/cockpit/', statusCode: 301 },
+		{
+			from: '^/blog/CocktailApp(.*)$',
+			to: '/blog/cocktail-app/',
+			statusCode: 301,
+		},
+		{
+			from: '^/blog/CssGrid(.*)$',
+			to: '/blog/css-grid/',
+			statusCode: 301,
+		},
+		{
+			from: '^/blog/TwitchCommands(.*)$',
+			to: '/blog/twitch-commands/',
+			statusCode: 301,
+		},
+		{
+			from: '^/blog/WebAuthn(.*)$',
+			to: '/blog/web-authn/',
+			statusCode: 301,
+		},
+	],
+
 	router: {
-		trailingSlash: false,
+		trailingSlash: true,
 	},
 
 	sitemap: {
 		hostname: 'https://0to100.ink',
 		gzip: true,
+		exculde: ['/impressum/', '/datenschutz/'],
 		routes() {
 			return getRoutes()
 		},
 		trailingSlash: true,
-		exculde: ['/impressum', '/datenschutz'],
 	},
 
 	pwa: {
