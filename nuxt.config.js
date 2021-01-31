@@ -133,7 +133,11 @@ export default {
 	},
 
 	redirect: [
-		{ from: '^/blog/Cockpit(.*)$', to: '/blog/cockpit/', statusCode: 301 },
+		{
+			from: '^/blog/Cockpit(.*)$',
+			to: '/blog/cockpit-cms/',
+			statusCode: 301,
+		},
 		{
 			from: '^/blog/CocktailApp(.*)$',
 			to: '/blog/cocktail-app/',
