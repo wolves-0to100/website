@@ -68,7 +68,7 @@ export default {
 			{
 				hid: 'canonical',
 				rel: 'canonical',
-				href: `https://0to100.ink/blog`,
+				href: `https://0to100.ink/blog/`,
 			},
 		],
 	},

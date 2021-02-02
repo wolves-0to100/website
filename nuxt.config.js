@@ -40,7 +40,7 @@ export default {
 			{
 				hid: 'canonical',
 				rel: 'canonical',
-				href: 'https://0to100.ink',
+				href: 'https://0to100.ink/',
 			},
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{
