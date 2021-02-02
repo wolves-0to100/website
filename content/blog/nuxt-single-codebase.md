@@ -16,4 +16,25 @@ updatedAt: 2021-02-12
 npx create-nuxt-app <my-project>
 ```
 
+```bash
+npm install --save @capacitor/core @capacitor/cli
+```
+
+```bash
+npx cap init --web-dir
+```
+
+capactior.config.js
+
+```json
+{
+	"npmClient": "npm",
+	"webDir": "dist",
+	"plugins": {},
+	"server": {
+		"iosScheme": "roastandbrew"
+	}
+}
+```
+
 ## Fazit
