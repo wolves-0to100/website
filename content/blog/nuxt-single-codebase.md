@@ -37,4 +37,16 @@ capactior.config.js
 }
 ```
 
+```bash
+npm run generate
+```
+
+```bash
+npx cap add ios
+```
+
+```bash
+npx cap add android
+```
+
 ## Fazit

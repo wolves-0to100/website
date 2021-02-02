@@ -53,7 +53,7 @@ export default {
 			{
 				hid: 'canonical',
 				rel: 'canonical',
-				href: `https://0to100.ink/projekte`,
+				href: `https://0to100.ink/projekte/`,
 			},
 		],
 	},
