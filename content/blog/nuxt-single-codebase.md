@@ -1,0 +1,19 @@
+---
+title: Nuxt Single Codebase
+description: In diesem Artikel fasse ich zusammen, wie man mit Nuxt und Capacitor aus einer Codebase eine Webseite, Android und iOS App baut.
+author: Marcel Pfeifer
+img: nuxtSingleCodebase.jpg
+tags: tech
+createdAt: 2021-02-12
+updatedAt: 2021-02-12
+---
+
+## Einleitung
+
+## Setting up
+
+```bash
+npx create-nuxt-app <my-project>
+```
+
+## Fazit
