@@ -30,11 +30,6 @@ export default {
 			{ property: 'og:image:height', content: '300' },
 			{ name: 'twitter:site', content: '@marcelxpfeifer' },
 			{ name: 'twitter:card', content: 'summary_large_image' },
-			{
-				name: 'keywords',
-				content:
-					'Marcel Pfeifer, Wolves, 0to100, Blog, Cocktails, twitch, Games, Spiele, Frontend, Developer, Development, Entwickler, Designer, Design, User Experience, User Interface, User, Interface, Experience, student, webdesign, webdesigner, UX, UI, Product, vue, vuejs, nuxtjs, css, scss, html, javascript',
-			},
 		],
 		link: [
 			{
