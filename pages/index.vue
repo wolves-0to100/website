@@ -33,10 +33,11 @@
 					</p>
 				</div>
 				<div>
-					<a href="https://flags.0to100.ink">Twitch Spiele</a>
+					<a href="https://games.0to100.ink">Streamer Games</a>
 					<p>
-						Aktuell gibt es nur ein Spiel, welches wir zusammen im
-						Stream gebaut haben. Bald gibt es hier hoffentlich mehr.
+						Streamer Games erlaubt es dir mit deinem Twitch Chat
+						Spiele zu spielen. Wir arbeiten daran immer neue Spiele
+						zu entwicklen.
 					</p>
 				</div>
 				<div>
