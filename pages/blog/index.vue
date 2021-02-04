@@ -34,6 +34,7 @@ export default {
 			articles,
 		}
 	},
+	fetchKey: 'blog',
 	head: {
 		title: '0to100 | Blog',
 		meta: [
