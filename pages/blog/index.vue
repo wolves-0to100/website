@@ -26,6 +26,7 @@ export default {
 	components: { ArticleCard },
 	async asyncData({ $content }) {
 		const articles = await $content('blog')
+			.only(['slug', 'title', 'description', 'createdAt'])
 			.sortBy('createdAt', 'desc')
 			.fetch()
 
