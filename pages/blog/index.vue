@@ -25,9 +25,7 @@ export default {
 	name: 'Blog',
 	components: { ArticleCard },
 	async asyncData({ $content }) {
-		const articles = await $content('blog', {
-			deep: true,
-		})
+		const articles = await $content('blog')
 			.sortBy('createdAt', 'desc')
 			.fetch()
 
