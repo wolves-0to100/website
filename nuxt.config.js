@@ -181,6 +181,6 @@ export default {
 	},
 
 	generate: {
-		fallback: true,
+		crawler: true,
 	},
 }

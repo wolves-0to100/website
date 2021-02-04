@@ -18,7 +18,7 @@ Um die App schnell umsetzen zu können, haben wir uns für Cockpit CMS als Backe
 
 ### Backend
 
-Wie bereits erwähnt, benutzen wir Cockpit CMS im Backend. Wer mehr darüber erfahren möchte, kann sich gerne meinen Blogpost zu [Cockpit](/blog/Cockpit) durchlesen.
+Wie bereits erwähnt, benutzen wir Cockpit CMS im Backend. Wer mehr darüber erfahren möchte, kann sich gerne meinen Blogpost zu [Cockpit](/blog/cockpit-cms/) durchlesen.
 
 **Allgemeine Anforderungen:**
 
