@@ -13,7 +13,7 @@
 				v-for="article in articles"
 				:key="article.title"
 				:article="article"
-			></article-card>
+			/>
 		</div>
 	</div>
 </template>
