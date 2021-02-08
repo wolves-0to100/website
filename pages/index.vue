@@ -58,6 +58,16 @@
 			</div>
 		</section>
 
+		<section>
+			<h2>Über mich</h2>
+			<div class="faq">
+				<div>
+					<p class="question">Wie heißt du?</p>
+					<p class="answer">Mein Name ist Marcel</p>
+				</div>
+			</div>
+		</section>
+
 		<card @mouseover="animated = true" @mouseleave="animated = false">
 			<div>
 				<h2>Twitch</h2>
@@ -159,6 +169,24 @@ section {
 		}
 	}
 	p {
+		font-size: 0.9em;
+		color: rgb(96, 96, 96);
+	}
+}
+
+.faq {
+	display: grid;
+	grid-gap: 1em 2em;
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	@media (max-width: 750px) {
+		grid-template-columns: 1fr;
+	}
+
+	.question {
+		font-weight: 600;
+		margin-bottom: 6px;
+	}
+	.answer {
 		font-size: 0.9em;
 		color: rgb(96, 96, 96);
 	}
