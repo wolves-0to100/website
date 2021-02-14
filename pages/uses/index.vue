@@ -286,7 +286,7 @@ button {
 .legal {
 	font-size: 0.9em;
 	p {
-		margin: 1em 0;
+		margin: 1em auto;
 	}
 }
 </style>
