@@ -12,8 +12,11 @@
 </template>
 
 <script>
+import Card from '~/components/General/Card.vue'
+
 export default {
 	name: 'ArticleCard',
+	components: { Card },
 	props: {
 		article: {
 			type: Object,
