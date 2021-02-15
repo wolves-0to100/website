@@ -12,7 +12,7 @@ updatedAt: 2021-02-15
 
 Linkbuilding ist einer der anspruchsvollsten Aufgaben im Bereich der SEO. Ebenfalls ist es ein zweischneidiges Schwert. Einige Personen im SEO Bereich leben das Linkbuilding, andere sehen es eher als schmierige Taktik. Warum das so ist schauen wir uns jetzt etwas genauer an.
 
-## Was ist Linkbuidling?
+## Was ist Linkbuilding?
 
 Linkbuilding ist der Prozess andere Webseiten dazu zu bekommen auf Seiten der eigene Webseite zu verweisen. Diese Links werden in der Regel auch Backlinks genannt. Wie bereits eingangs Erwähnt ist dieser Prozess schwierig, aber gleichzeitig einer der Lohnenswertesten.
 Das Ziel sollte es dabei sein Beziehungen zu anderen Webseitenbesitzern auf zu bauen und so durch die Links zum Inhalt der anderen die eigene Arbeit zu verbessern.
