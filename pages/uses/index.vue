@@ -53,6 +53,18 @@
 				</div>
 			</div>
 		</section>
+		<section class="legal">
+			<p>
+				Die mit Sternchen (*) gekennzeichneten Links sind
+				Affiliatelinks/Werbelinks.
+			</p>
+			<p>
+				0to100 ist Teilnehmer des Amazon-Partnerprogramm, das zur
+				Bereitstellung eines Mediums für Webseiten konzipiert wurde,
+				mittels dessen durch die Platzierung von Partner-Links zu
+				Amazon.de Entgelte verdient werden können.
+			</p>
+		</section>
 	</div>
 </template>
 
@@ -76,26 +88,32 @@ export default {
 								'16GB RAM',
 								'512GB Speicher',
 							],
+							link: 'https://amzn.to/3qhSYI5',
 						},
 						{
 							title: 'Radeon RX Vega 64 8 GB',
 							details: ['im Sonnet eGFX Breakaway Box'],
+							link: 'https://amzn.to/3jA5D6E',
 						},
 						{
 							title: 'Keyboard',
 							details: ['Apple Magic Keyboard 2', 'Space Grey'],
+							link: 'https://amzn.to/36YIMfH',
 						},
 						{
 							title: 'Trackpad',
 							details: ['Apple Magic Trackpad 2', 'Space Grey'],
+							link: 'https://amzn.to/3aSCIXv',
 						},
 						{
 							title: 'Monitor',
 							details: ['LG Ultrawide Display', '27" Diagonale'],
+							link: 'https://amzn.to/3a1lU1c',
 						},
 						{
 							title: 'Mikrofone',
 							details: ['Rode Podcaster USB Mic'],
+							link: 'https://amzn.to/3q8PK9I',
 						},
 					],
 				},
@@ -110,10 +128,12 @@ export default {
 								'512GB Speicher',
 								'Space Grey',
 							],
+							link: 'https://amzn.to/3q6yUYP',
 						},
 						{
 							title: 'iPhone X',
 							details: ['256GB Speicher', 'Space Grey'],
+							link: 'https://amzn.to/3jvvcpk',
 						},
 						{
 							title: 'Canon EOS 6D',
@@ -122,6 +142,7 @@ export default {
 								'Canon 24-105 f4L',
 								'Canon 70-300mm f4-5,6',
 							],
+							link: 'https://amzn.to/36TTVhJ',
 						},
 					],
 				},
@@ -259,6 +280,13 @@ button {
 	}
 	section:nth-child(even) {
 		background-color: #222222;
+	}
+}
+
+.legal {
+	font-size: 0.9em;
+	p {
+		margin: 1em auto;
 	}
 }
 </style>

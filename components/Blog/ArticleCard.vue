@@ -21,6 +21,7 @@ export default {
 				return {
 					slug: 'test',
 					title: 'Hello World',
+					tags: '',
 					description: 'Ich sollte hier eigentlich nie auftauchen.',
 					createdAt: new Date().toString(),
 				}
