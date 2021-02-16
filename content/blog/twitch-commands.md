@@ -46,7 +46,7 @@ Ein Link zu meinem Twitterprofil
 
 Mein Blog ist mein digitales Notizbuch
 
--   [Blog](/blog)
+-   [Blog](/blog/)
 
 ### !ig & !instagram
 
@@ -58,7 +58,7 @@ Link zu meinem Instagram Profil
 
 Zeug was ich benutze
 
--   [Uses](/uses)
+-   [Uses](/uses/)
 
 ### !git & !gitlab
 
