@@ -1,6 +1,6 @@
 # 0to100
 
-Das ist der Code für die Webseite: (0to100)[https://0to100.ink]
+Das ist der Code für die Webseite: [0to100](https://0to100.ink)
 
 ## Build Setup
 
