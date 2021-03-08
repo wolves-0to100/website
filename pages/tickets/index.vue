@@ -62,7 +62,7 @@ export default {
 }
 
 h1 {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 p {
