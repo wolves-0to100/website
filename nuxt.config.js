@@ -100,7 +100,7 @@ export default {
 	 ** Nuxt.js modules
 	 */
 	modules: [
-		'@nuxtjs/pwa',
+		'@nuxt/http',
 		'@nuxt/content',
 		'@nuxtjs/sitemap',
 		'@nuxtjs/redirect-module',
