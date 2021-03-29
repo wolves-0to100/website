@@ -6,7 +6,20 @@
 			gebaut haben. Zu den meisten Projekten schreibe ich ebenfalls einen
 			Blogpost um die unsere Prozesse festzuhalten.
 		</p>
-		<ProjectCard class="project" img="cocktails">
+		<ProjectCard class="project" img="streamerGames" title="Streamer Games">
+			<h2>Streamer Games</h2>
+			<p>
+				Streamer Games erlaubt es Streamern mit ihren Chat Spiele zu
+				spielen. Dabei liegt der aktuelle Fokus auf wissensbasierenden
+				Spielen. Zum Beispiel können Länder auf einer Weltkarte benannt
+				werden.
+			</p>
+			<div class="links">
+				<h3>Jetzt vorbeischauen:</h3>
+				<a href="https://games.0to100.ink">Streamer Games</a>
+			</div>
+		</ProjectCard>
+		<ProjectCard class="project" img="cocktails" title="Minimal Cocktails">
 			<h2>Minimal Cocktails</h2>
 			<p>
 				Minimal Cocktails ist eine App, welche wir on Stream gebaut
@@ -28,8 +41,6 @@
 				>
 					PlayStore
 				</a>
-				<br />
-				<a href="https://cocktails.ink">Webseite</a>
 			</div>
 		</ProjectCard>
 	</div>
@@ -79,7 +90,7 @@ export default {
 .project {
 	margin: 2rem 0;
 	h2 {
-		margin: 1em 0;
+		margin: 0 0 1em;
 	}
 	.links {
 		h3 {

@@ -1,6 +1,6 @@
 <template>
 	<Card class="project">
-		<div>
+		<div class="content">
 			<slot></slot>
 		</div>
 		<img :src="getImage(img)" :alt="`Bilder von ${title}`" />
@@ -15,6 +15,10 @@ export default {
 		Card,
 	},
 	props: {
+		title: {
+			type: String,
+			default: '',
+		},
 		img: {
 			type: String,
 			default: '',
@@ -35,15 +39,16 @@ export default {
 	overflow: hidden;
 	&:hover {
 		img {
-			margin-top: 0%;
-			margin-bottom: -10%;
+			margin-top: 5%;
+			margin-bottom: -5%;
 		}
 	}
 	@media (max-width: 1000px) {
 		flex-direction: column;
 	}
 }
-div {
+.content {
+	padding: 1rem 0;
 	width: 50%;
 	margin-right: 10%;
 	@media (max-width: 1000px) {
@@ -54,7 +59,7 @@ div {
 
 img {
 	transition: margin 200ms;
-	margin: 10% auto -20%;
+	margin: 10% auto -10%;
 	width: 40%;
 	height: 100%;
 	@media (max-width: 750px) {
