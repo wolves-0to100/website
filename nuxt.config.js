@@ -99,12 +99,7 @@ export default {
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: [
-		'@nuxt/http',
-		'@nuxt/content',
-		'@nuxtjs/sitemap',
-		'@nuxtjs/redirect-module',
-	],
+	modules: ['@nuxt/http', '@nuxt/content', '@nuxtjs/sitemap'],
 	/*
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/
@@ -126,34 +121,6 @@ export default {
 			}
 		},
 	},
-
-	redirect: [
-		{
-			from: '^/blog/Cockpit(.*)$',
-			to: '/blog/cockpit-cms/',
-			statusCode: 301,
-		},
-		{
-			from: '^/blog/CocktailApp(.*)$',
-			to: '/blog/cocktail-app/',
-			statusCode: 301,
-		},
-		{
-			from: '^/blog/CssGrid(.*)$',
-			to: '/blog/css-grid/',
-			statusCode: 301,
-		},
-		{
-			from: '^/blog/TwitchCommands(.*)$',
-			to: '/blog/twitch-commands/',
-			statusCode: 301,
-		},
-		{
-			from: '^/blog/WebAuthn(.*)$',
-			to: '/blog/web-authn/',
-			statusCode: 301,
-		},
-	],
 
 	router: {
 		trailingSlash: true,
