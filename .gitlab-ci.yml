@@ -15,7 +15,7 @@ build:
     only:
         - master
     script:
-        - npm install
+        - npm install --build-from-resource
         - npm run generate
     artifacts:
         paths:
