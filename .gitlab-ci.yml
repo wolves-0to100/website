@@ -1,5 +1,5 @@
 default:
-    image: node:latest
+    image: node:lts
 
 stages:
     - build
@@ -15,7 +15,7 @@ build:
     only:
         - master
     script:
-        - npm install --build-from-resource
+        - npm install
         - npm run generate
     artifacts:
         paths:
