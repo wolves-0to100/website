@@ -11,7 +11,7 @@ updatedAt: 2021-05-07
 Ich benutzt meinen Mac primär zum Entwickeln von Web Anwendungen und Software Lösungen. Dieser Artikel soll es mir erleichtern meinen Mac für diese Zwecke neu aufzusetzen. Vielleicht kann er dir ja auch weiterhelfen.
 
 ## Before
-- Think about ssh keys
+- Über ssh keys nachdenken
 - Fonts speichern
 - iTerm Settings speichern
 - Keystores speichern
@@ -30,7 +30,7 @@ xcode-select --install
 
 ### Setup Node
 
-Wir installieren NVM um zwischen verschiedene Node Versionen wechseln zu können.
+Wir installieren `nvm` um zwischen verschiedene Node Versionen wechseln zu können.
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh
@@ -46,7 +46,7 @@ git config —global user.email “marcel@wolves.ink”
 
 #### Global .gitignore
 
-Create the file ~/.gitignore as shown below
+Create the file `~/.gitignore` as shown below
 
 ```bash
 vim ~/.gitignore
@@ -153,7 +153,7 @@ defaults write com.apple.dock autohide-delay -float 0; killall Dock
 ```
 
 ### Screenshots
-Change the _default folder for screenshots_
+Wir ändern den standart Ordner für screenshots
   - Neuen Ordner anlegen: `mkdir -p [user]/screenshots/`
   - Führe dann den folgenden Befehl aus:
 
