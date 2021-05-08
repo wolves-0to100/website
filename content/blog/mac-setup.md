@@ -5,7 +5,7 @@ author: Marcel Pfeifer
 img: macSetup.jpg
 tags: tech
 createdAt: 2021-05-07
-updatedAt: 2021-05-07
+updatedAt: 2021-05-08
 ---
 
 Ich benutzt meinen Mac primär zum Entwickeln von Web Anwendungen und Software Lösungen. Dieser Artikel soll es mir erleichtern meinen Mac für diese Zwecke neu aufzusetzen. Vielleicht kann er dir ja auch weiterhelfen.
