@@ -6,7 +6,10 @@
 			</div>
 			<div class="tools">
 				<div v-for="tool in section.content" :key="tool.title">
-					<h3>{{ tool.title }}</h3>
+					<a v-if="tool.link" :href="tool.link" class="refLink"
+						><h3>{{ tool.title }}</h3></a
+					>
+					<h3 v-else>{{ tool.title }}</h3>
 					<ul>
 						<li
 							v-for="(detail, i) in tool.details"
@@ -89,5 +92,17 @@ section {
 
 section:nth-child(even) {
 	background-color: #f8f8f8;
+}
+
+.refLink {
+	h3 {
+		display: inline-block;
+	}
+	&::after {
+		position: absolute;
+		margin-left: 6px;
+		content: '*';
+		font-size: 0.8em;
+	}
 }
 </style>

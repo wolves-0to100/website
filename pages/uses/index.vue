@@ -53,6 +53,18 @@
 				</div>
 			</div>
 		</section>
+		<section class="legal">
+			<p>
+				Die mit Sternchen (*) gekennzeichneten Links sind
+				Affiliatelinks/Werbelinks.
+			</p>
+			<p>
+				0to100 ist Teilnehmer des Amazon-Partnerprogramm, das zur
+				Bereitstellung eines Mediums für Webseiten konzipiert wurde,
+				mittels dessen durch die Platzierung von Partner-Links zu
+				Amazon.de Entgelte verdient werden können.
+			</p>
+		</section>
 	</div>
 </template>
 
@@ -76,26 +88,33 @@ export default {
 								'16GB RAM',
 								'512GB Speicher',
 							],
+							link: 'https://www.amazon.de/Apple-MacBook-Core-i7-Prozessor-8-Generation/dp/B07FL1M4LQ?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=MacBook+Pro&qid=1614241250&quartzVehicle=184-492&replacementKeywords=macbook&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExUkxZUFJUMFUyN0lWJmVuY3J5cHRlZElkPUEwOTcyMzY2MlE2SVZKVzY5NFIxWiZlbmNyeXB0ZWRBZElkPUEwODkyNDEwUlFDVk9JR1lHSVdXJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=ll1&tag=0to1000a-21&linkId=acf3afb1bd4cafd083404e9ca44f330d&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Radeon RX Vega 64 8 GB',
 							details: ['im Sonnet eGFX Breakaway Box'],
+							link: 'https://www.amazon.de/GIGABYTE-Radeon-RX-Vega-Gaming/dp/B079MFMQ8D?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=radeon+rx+vega+64+8gb&qid=1614241294&sr=8-9&linkCode=ll1&tag=0to1000a-21&linkId=a9ab1271c6ce63912c60be7dc3d973ba&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Keyboard',
 							details: ['Apple Magic Keyboard 2', 'Space Grey'],
+							link: 'https://www.amazon.de/Apple-Magic-Keyboard-Ziffernblock-Deutsch/dp/B07BR1FNCV?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Apple+Magic+Keyboard+2&qid=1614241332&quartzVehicle=72-810&replacementKeywords=apple+magic+keyboard&sr=8-2&linkCode=ll1&tag=0to1000a-21&linkId=4339ffca15bf885c1e8873cf9fb776fd&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Trackpad',
 							details: ['Apple Magic Trackpad 2', 'Space Grey'],
+							link: 'https://www.amazon.de/Magic-Trackpad-2-Space-Grey/dp/B07BS1RQ4N?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Apple+Magic+Trackpad+2&qid=1614241356&quartzVehicle=72-810&replacementKeywords=apple+magic+trackpad&sr=8-1&linkCode=ll1&tag=0to1000a-21&linkId=1d684640b8467480df634551bedd1415&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Monitor',
 							details: ['LG Ultrawide Display', '27" Diagonale'],
+							link: 'https://www.amazon.de/LG-29WL50S-B-Zoll-UltraWideTM-Maxxaudio/dp/B07XTW5FPH?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=LG+Ultrawide+Display+27+zoll&qid=1614241410&sr=8-3&linkCode=ll1&tag=0to1000a-21&linkId=afcfc156d7ccd62a66358cd841cc1b1d&language=de_DE&ref_=as_li_ss_tl',
 						},
+
 						{
 							title: 'Mikrofone',
 							details: ['Rode Podcaster USB Mic'],
+							link: 'https://www.amazon.de/Rode-Podcaster-Dynamisches-Gro%C3%9Fmembranmikrofon-USB-Anschluss/dp/B000JM46FY?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Rode+Podcaster+USB+Mic&qid=1614241463&sr=8-10&linkCode=ll1&tag=0to1000a-21&linkId=0598e04a9828eb27f6b3a737d2529ab1&language=de_DE&ref_=as_li_ss_tl',
 						},
 					],
 				},
@@ -110,10 +129,12 @@ export default {
 								'512GB Speicher',
 								'Space Grey',
 							],
+							link: 'https://www.amazon.de/Neu-Apple-iPad-Wi-Fi-128-GB/dp/B0863YSKCM?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=iPad+Pro+2018&qid=1614241493&quartzVehicle=184-492&replacementKeywords=ipad+2018&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyVDMyM0taVjBNUzhCJmVuY3J5cHRlZElkPUEwNzI1ODQ1MzA1WEtHNlpCVEhJSSZlbmNyeXB0ZWRBZElkPUEwMjg3ODQ3UDRFNktRM1lEVkZGJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=ll1&tag=0to1000a-21&linkId=e33991f42402a51a01cb68d5c6186705&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'iPhone X',
 							details: ['256GB Speicher', 'Space Grey'],
+							link: 'https://www.amazon.de/Apple-iPhone-X-256GB-Space-Grau/dp/B075LWF4C3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=iPhone+X&qid=1614241515&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzQ0M2NDFMVzdYNUIwJmVuY3J5cHRlZElkPUEwMjE5Njk5MUxORTdHREQ3QlM4WiZlbmNyeXB0ZWRBZElkPUEwMjI1MTQ4MzYxWEc3WVZQWTdYWCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=ll1&tag=0to1000a-21&linkId=0e7da1970180d2b53427897fae7415ee&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Canon EOS 6D',
@@ -122,6 +143,7 @@ export default {
 								'Canon 24-105 f4L',
 								'Canon 70-300mm f4-5,6',
 							],
+							link: 'https://www.amazon.de/Canon-SLR-Digitalkamera-Megapixel-Display-Geh%C3%A4use/dp/B009C6WYTS?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=eos+6d&qid=1614241549&quartzVehicle=121-635&replacementKeywords=6d&sr=8-4&linkCode=ll1&tag=0to1000a-21&linkId=da08a1fca650b5209a9291938e80176b&language=de_DE&ref_=as_li_ss_tl',
 						},
 					],
 				},
@@ -259,6 +281,13 @@ button {
 	}
 	section:nth-child(even) {
 		background-color: #222222;
+	}
+}
+
+.legal {
+	font-size: 0.9em;
+	p {
+		margin: 1em auto;
 	}
 }
 </style>
