@@ -95,6 +95,7 @@ export default {
 		'@nuxtjs/eslint-module',
 		'@nuxtjs/color-mode',
 		'@nuxtjs/pwa',
+		'@nuxt/image',
 	],
 	/*
 	 ** Nuxt.js modules

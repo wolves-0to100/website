@@ -1,10 +1,12 @@
 <template>
 	<article>
-		<img
+		<nuxt-picture
 			class="img"
-			:src="require(`~/assets/Blog/${article.img}`)"
+			:src="`/Blog/${article.img}`"
 			:alt="article.title"
+			sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
 			loading="lazy"
+			fit="cover"
 		/>
 		<h1>{{ article.title }}</h1>
 		<p class="author">{{ article.author }}</p>
@@ -47,7 +49,7 @@ export default {
 				type: 'article',
 				title: this.article.title,
 				description: this.article.description,
-				mainImage: require(`~/assets/Blog/${this.article.img}`),
+				mainImage: `/Blog/${this.article.img}`,
 			}
 		},
 	},
@@ -199,8 +201,7 @@ article {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: calc(100px + 100px + 100px);
-	object-fit: cover;
+	height: 300px;
 	pointer-events: none;
 	user-select: none;
 	opacity: 0.2;
