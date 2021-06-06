@@ -206,6 +206,11 @@ article {
 	user-select: none;
 	opacity: 0.2;
 	z-index: -1;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
 
 h1 {
