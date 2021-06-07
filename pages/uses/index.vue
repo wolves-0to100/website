@@ -21,7 +21,7 @@
 							height="450"
 							:style="iframeStyle"
 							sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-							src="https://embed.music.apple.com/de/playlist/2020-year-mix/pl.u-oZylKLeCPyDvMN?l=en"
+							src="https://embed.music.apple.com/de/playlist/2021-year-mix/pl.u-jV89aBkCbe3oZA?l=en"
 						></iframe>
 						<iframe
 							allow="autoplay *; encrypted-media *; fullscreen *"
@@ -37,7 +37,7 @@
 							height="450"
 							:style="iframeStyle"
 							sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-							src="https://embed.music.apple.com/de/playlist/remix-zone/pl.u-NpXmY4VCvx7jPr?l=en"
+							src="https://embed.music.apple.com/de/playlist/modern-rock/pl.u-8aAVz7qHNer7gM?l=en"
 						></iframe>
 					</div>
 					<div v-else>
