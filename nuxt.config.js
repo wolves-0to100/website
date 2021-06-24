@@ -63,10 +63,10 @@ export default {
 		],
 		script: [
 			{
-				async: true,
 				defer: true,
-				'data-website-id': 'c18f2cfa-937c-4daa-965e-1aa9f37ddd64',
-				src: 'https://umami.wolves.ink/umami.js',
+				'data-cf-beacon':
+					'{"token": "a5cf81f981704fc6ba12e733d962b0df"}',
+				src: 'https://static.cloudflareinsights.com/beacon.min.js',
 			},
 		],
 		htmlAttrs: {
