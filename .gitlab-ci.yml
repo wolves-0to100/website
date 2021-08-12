@@ -1,39 +1,46 @@
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
+# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 default:
-    image: node:lts
-
+  image: node:lts
 stages:
-    - build
-    - deploy
-    - lhci
-
+- build
+- deploy
+- lhci
+- test
 cache:
-    paths:
-        - node_modules/
-
+  paths:
+  - node_modules/
 build:
-    stage: build
-    only:
-        - master
-    script:
-        - npm install
-        - npm run generate
-    artifacts:
-        paths:
-            - dist/
-
+  stage: build
+  only:
+  - master
+  script:
+  - npm install
+  - npm run generate
+  artifacts:
+    paths:
+    - dist/
 deploy:
-    stage: deploy
-    only:
-        - master
-    script:
-        - cp CNAME dist/
-        - node_modules/.bin/surge dist/
-
+  stage: deploy
+  only:
+  - master
+  script:
+  - cp CNAME dist/
+  - node_modules/.bin/surge dist/
 lhci:
-    stage: lhci
-    image: cypress/browsers:node12.6.0-chrome77
-    only:
-        - master
-    script:
-        - npm install -g @lhci/cli@0.3.x
-        - lhci autorun --upload.target=temporary-public-storage --collect.settings.chromeFlags="--no-sandbox" --collect.url=$LIGHTHOUSE_TEST_URL || echo "LHCI failed!"
+  stage: lhci
+  image: cypress/browsers:node12.6.0-chrome77
+  only:
+  - master
+  script:
+  - npm install -g @lhci/cli@0.3.x
+  - lhci autorun --upload.target=temporary-public-storage --collect.settings.chromeFlags="--no-sandbox"
+    --collect.url=$LIGHTHOUSE_TEST_URL || echo "LHCI failed!"
+sast:
+  stage: test
+include:
+- template: Security/SAST.gitlab-ci.yml
