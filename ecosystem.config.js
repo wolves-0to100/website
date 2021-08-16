@@ -4,7 +4,7 @@ module.exports = {
 			name: '0to100.ink',
 			exec_mode: 'cluster',
 			instances: 'max',
-			script: './.nuxt/index.js',
+			script: './node_modules/nuxt/bin/nuxt.js',
 			args: 'start',
 			env: {
 				PORT: 5678,
