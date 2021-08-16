@@ -1,7 +1,7 @@
 import getRoutes from './utils/getRoutes'
 
 export default {
-	target: 'static',
+	target: 'server',
 	head: {
 		title: '0to100',
 		meta: [
