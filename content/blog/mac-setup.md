@@ -8,13 +8,14 @@ createdAt: 2021-05-07
 updatedAt: 2021-05-08
 ---
 
-Ich benutzt meinen Mac primär zum Entwickeln von Web Anwendungen und Software Lösungen. Dieser Artikel soll es mir erleichtern meinen Mac für diese Zwecke neu aufzusetzen. Vielleicht kann er dir ja auch weiterhelfen.
+Ich benutze meinen Mac primär zum Entwickeln von Web Anwendungen und Software Lösungen. Dieser Artikel soll es mir erleichtern meinen Mac für diese Zwecke neu aufzusetzen. Vielleicht kann er dir ja auch weiterhelfen.
 
 ## Before
-- Über ssh keys nachdenken
-- Fonts speichern
-- iTerm Settings speichern
-- Keystores speichern
+
+-   Über ssh keys nachdenken
+-   Fonts speichern
+-   iTerm Settings speichern
+-   Keystores speichern
 
 ## Setup
 
@@ -35,6 +36,7 @@ Wir installieren `nvm` um zwischen verschiedene Node Versionen wechseln zu könn
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh
 ```
+
 ### Setup Git
 
 Wir personalisieren die globalen Git Einstellungen.
@@ -76,9 +78,10 @@ venv
 node_modules
 .sass-cache
 ```
+
 ### Setup zsh appearance
 
-Hier richte ich mir meine eignen Style der Konsole ein. Dafür füge ich folgenden Code zur .zshrc 
+Hier richte ich mir meine eignen Style der Konsole ein. Dafür füge ich folgenden Code zur .zshrc
 
 ```bash
 vim ~/.zshrc
@@ -104,30 +107,38 @@ PATH=$PATH:$ANDROID_HOME/tools; PATH=$PATH:$ANDROID_HOME/platform-tools
 ### Apple Settings
 
 Die ich mein System auf Englisch einstelle sind die folgenden Punkte ebenfalls in Englisch.
+
 #### Dock
-* Automatically hide and show Dock
-* Show indicators for open applications
+
+-   Automatically hide and show Dock
+-   Show indicators for open applications
 
 #### Trackpad
-* Tap to click -> ON
+
+-   Tap to click -> ON
 
 #### Keyboard
-* Key Repeat -> Fast
-* Delay Until Repeat -> Short
+
+-   Key Repeat -> Fast
+-   Delay Until Repeat -> Short
 
 #### Security and Privacy
-* Allow apps downloaded from App Store and identified developers
-* Turn FileVault On (makes sure SSD is securely encrypted)
-* Turn Firewall On (extra security measure)
+
+-   Allow apps downloaded from App Store and identified developers
+-   Turn FileVault On (makes sure SSD is securely encrypted)
+-   Turn Firewall On (extra security measure)
 
 #### Sharing
-* Change computer name
-* Make sure all file sharing is disabled
+
+-   Change computer name
+-   Make sure all file sharing is disabled
 
 #### Users & Groups
-* Add "Rectangle" to Login items
+
+-   Add "Rectangle" to Login items
 
 #### Terminal Commandes
+
 ```bash
 # Show Library folder
 chflags nohidden ~/Library
@@ -153,9 +164,11 @@ defaults write com.apple.dock autohide-delay -float 0; killall Dock
 ```
 
 ### Screenshots
+
 Wir ändern den standart Ordner für screenshots
-  - Neuen Ordner anlegen: `mkdir -p [user]/screenshots/`
-  - Führe dann den folgenden Befehl aus:
+
+-   Neuen Ordner anlegen: `mkdir -p [user]/screenshots/`
+-   Führe dann den folgenden Befehl aus:
 
 ```bash
 defaults write com.apple.screencapture location [user]/screenshots/ && killall SystemUIServer
@@ -165,65 +178,69 @@ defaults write com.apple.screencapture location [user]/screenshots/ && killall S
 
 If possible use homebrew.
 
-- LastPass
-- PAW
-- ForkLift
-- Sensei
-- Affinity Suite
-- Chromium
-- Chrome
-- Firefox
-- Discord
-- Docker
-- iTerm
-- Linear
-- Rectangle
-- Sketch / Figma
-- Slack
-- Tor Browser
-- xCode
-- FinalCut
-- iWork (sollten installiert sein)
-- The Unarchiver
-- Docker
-- Visual Studio Code
-- Vim
+-   LastPass
+-   PAW
+-   ForkLift
+-   Sensei
+-   Affinity Suite
+-   Chromium
+-   Chrome
+-   Firefox
+-   Discord
+-   Docker
+-   iTerm
+-   Linear
+-   Rectangle
+-   Sketch / Figma
+-   Slack
+-   Tor Browser
+-   xCode
+-   FinalCut
+-   iWork (sollten installiert sein)
+-   The Unarchiver
+-   Docker
+-   Visual Studio Code
+-   Vim
 
 ##### Optional Apps
 
-- Minecraft
-- WoT
-- Spotify
-- Opera
-- Edge
-- Mouseless
-- Main Stage
-- Logic
-- Hopper Disassembler
-- Draw.io
-- JetBrains
-- Spark
+-   Minecraft
+-   WoT
+-   Spotify
+-   Opera
+-   Edge
+-   Mouseless
+-   Main Stage
+-   Logic
+-   Hopper Disassembler
+-   Draw.io
+-   JetBrains
+-   Spark
 
 ### Change App Settings
 
 #### iTerm
-* Import Settings
+
+-   Import Settings
 
 #### Chrome
-* VueDev Tools
+
+-   VueDev Tools
 
 #### Visual Studio Code
-* Install Nord Theme
+
+-   Install Nord Theme
 
 ## Create Bootable Volume
 
 ### Required
-* Bootable Stick (<12GB)
-* MacOS update
+
+-   Bootable Stick (<12GB)
+-   MacOS update
 
 ### Steps
 
-* Convert Stick to GUID Partition Map with Mac OS Extended Journaled
+-   Convert Stick to GUID Partition Map with Mac OS Extended Journaled
 
 ```bash
 sudo /Applications/Install\ macOS\ Beta.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled

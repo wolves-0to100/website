@@ -1,48 +1,58 @@
 <template>
 	<div class="container">
-		<h1>Projekte</h1>
-		<p class="introduction">
-			Hier findest du einige Projekte, welche wir zusammen auf 0to100
-			gebaut haben. Zu den meisten Projekten schreibe ich ebenfalls einen
-			Blogpost um die unsere Prozesse festzuhalten.
-		</p>
-		<ProjectCard class="project" img="streamerGames" title="Streamer Games">
-			<h2>Streamer Games</h2>
-			<p>
-				Streamer Games erlaubt es Streamern mit ihren Chat Spiele zu
-				spielen. Dabei liegt der aktuelle Fokus auf wissensbasierenden
-				Spielen. Zum Beispiel können Länder auf einer Weltkarte benannt
-				werden.
+		<main>
+			<h1>Projekte</h1>
+			<p class="introduction">
+				Hier findest du einige Projekte, welche wir zusammen auf 0to100
+				gebaut haben. Zu den meisten Projekten schreibe ich ebenfalls
+				einen Blogpost um die unsere Prozesse festzuhalten.
 			</p>
-			<div class="links">
-				<h3>Jetzt vorbeischauen:</h3>
-				<a href="https://games.0to100.ink">Streamer Games</a>
-			</div>
-		</ProjectCard>
-		<ProjectCard class="project" img="cocktails" title="Minimal Cocktails">
-			<h2>Minimal Cocktails</h2>
-			<p>
-				Minimal Cocktails ist eine App, welche wir on Stream gebaut
-				haben. Sie überzeugt durch ein simples Design und wöchentlich
-				neue Cocktails. Für die Umsetzung haben wir Cockpit CMS und eine
-				Single Codebase benutzt. Mehr über den Entwicklungprozess kannst
-				du hier lesen:
-				<nuxt-link to="/blog/cocktail-app/">Blogpost</nuxt-link>
-			</p>
-			<div class="links">
-				<h3>Jetzt herunterladen:</h3>
-				<a
-					href="https://apps.apple.com/us/app/minimal-cocktails/id1546888686"
-				>
-					AppStore
-				</a>
-				<a
-					href="https://play.google.com/store/apps/details?id=ink.wolves.cocktails"
-				>
-					PlayStore
-				</a>
-			</div>
-		</ProjectCard>
+			<ProjectCard
+				class="project"
+				img="streamerGames"
+				title="Streamer Games"
+			>
+				<h2>Streamer Games</h2>
+				<p>
+					Streamer Games erlaubt es Streamern mit ihren Chat Spiele zu
+					spielen. Dabei liegt der aktuelle Fokus auf
+					wissensbasierenden Spielen. Zum Beispiel können Länder auf
+					einer Weltkarte benannt werden.
+				</p>
+				<div class="links">
+					<h3>Jetzt vorbeischauen:</h3>
+					<a href="https://games.0to100.ink">Streamer Games</a>
+				</div>
+			</ProjectCard>
+			<ProjectCard
+				class="project"
+				img="cocktails"
+				title="Minimal Cocktails"
+			>
+				<h2>Minimal Cocktails</h2>
+				<p>
+					Minimal Cocktails ist eine App, welche wir on Stream gebaut
+					haben. Sie überzeugt durch ein simples Design und
+					wöchentlich neue Cocktails. Für die Umsetzung haben wir
+					Cockpit CMS und eine Single Codebase benutzt. Mehr über den
+					Entwicklungprozess kannst du hier lesen:
+					<nuxt-link to="/blog/cocktail-app/">Blogpost</nuxt-link>
+				</p>
+				<div class="links">
+					<h3>Jetzt herunterladen:</h3>
+					<a
+						href="https://apps.apple.com/us/app/minimal-cocktails/id1546888686"
+					>
+						AppStore
+					</a>
+					<a
+						href="https://play.google.com/store/apps/details?id=ink.wolves.cocktails"
+					>
+						PlayStore
+					</a>
+				</div>
+			</ProjectCard>
+		</main>
 	</div>
 </template>
 
@@ -53,7 +63,7 @@ export default {
 		ProjectCard,
 	},
 	head: {
-		title: '0to100 | Projekte',
+		title: 'Projekte | 0to100',
 		link: [
 			{
 				hid: 'description',
@@ -72,17 +82,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 100px 10%;
-	min-height: 100vh;
-	max-width: 1080px;
-	@media (min-width: 1600px) {
-		padding: 100px 160px;
-	}
-}
-
 .introduction {
 	margin: 1em 0 2em;
 }
