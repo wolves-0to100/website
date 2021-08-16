@@ -17,8 +17,24 @@
 				/>
 			</div>
 			<div class="nav">
-				<nuxt-link v-if="hasNext" to="/blog/page/1">
-					Ältere Posts ->
+				<nuxt-link v-if="rootBlog" :to="rootBlog" exact>
+					Neuere Posts
+				</nuxt-link>
+				<nuxt-link
+					v-else-if="hasPrev"
+					:to="{
+						params: { page: ($route.params.page | 0) - 1 },
+					}"
+				>
+					Neuere Posts
+				</nuxt-link>
+				<nuxt-link
+					v-if="hasNext"
+					:to="{
+						params: { page: ($route.params.page | 0) + 1 },
+					}"
+				>
+					Ältere Posts
 				</nuxt-link>
 			</div>
 		</main>
@@ -29,22 +45,28 @@
 import ArticleCard from '~/components/Blog/ArticleCard.vue'
 
 export default {
-	name: 'Blog',
+	name: 'BlogList',
 	components: { ArticleCard },
-	async asyncData({ $content }) {
+	async asyncData({ $content, params }) {
 		const articlesPerPage = 6
+		const articlesToSkip = (params.page * articlesPerPage) | 0
 		const allArticles = await $content('blog').only('title').fetch()
 		const articles = await $content('blog')
 			.only(['slug', 'title', 'description', 'img', 'createdAt', 'tags'])
 			.sortBy('createdAt', 'desc')
+			.skip(articlesToSkip)
 			.limit(articlesPerPage)
 			.fetch()
 
-		const hasNext = allArticles.length > articlesPerPage
+		const hasNext = allArticles.length > articlesToSkip + articlesPerPage
+		const hasPrev = articlesToSkip > 0
+		const rootBlog = params.page === '1' ? '/blog' : null
 
 		return {
 			hasNext,
+			hasPrev,
 			articles,
+			rootBlog,
 		}
 	},
 	head: {
@@ -55,13 +77,6 @@ export default {
 				name: 'description',
 				content:
 					'Dies ist mein digitales Notizbuch, um einige Gedanken, Ideen und coole Dinge mit dem Internet zu teilen.',
-			},
-		],
-		link: [
-			{
-				hid: 'canonical',
-				rel: 'canonical',
-				href: `https://0to100.ink/blog/`,
 			},
 		],
 	},
@@ -86,15 +101,10 @@ h2 {
 	}
 }
 
-.nav {
-	display: flex;
-	justify-content: flex-end;
-
-	a {
-		display: inline-block;
-		font-size: 14px;
-		margin-top: 1em;
-		text-decoration: none;
-	}
+.nav a {
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 1em;
+	text-decoration: none;
 }
 </style>

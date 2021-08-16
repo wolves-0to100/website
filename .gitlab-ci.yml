@@ -29,8 +29,7 @@ deploy:
   only:
   - master
   script:
-  - cp CNAME dist/
-  - node_modules/.bin/surge dist/
+  - echo "Currently Missing"
 lhci:
   stage: lhci
   image: cypress/browsers:node12.6.0-chrome77

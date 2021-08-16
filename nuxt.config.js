@@ -62,12 +62,12 @@ export default {
 			},
 		],
 		script: [
-			{
-				defer: true,
-				'data-cf-beacon':
-					'{"token": "a5cf81f981704fc6ba12e733d962b0df"}',
-				src: 'https://static.cloudflareinsights.com/beacon.min.js',
-			},
+			// {
+			// 	defer: true,
+			// 	'data-cf-beacon':
+			// 		'{"token": "a5cf81f981704fc6ba12e733d962b0df"}',
+			// 	src: 'https://static.cloudflareinsights.com/beacon.min.js',
+			// },
 		],
 		htmlAttrs: {
 			lang: 'de',
@@ -100,7 +100,12 @@ export default {
 	/*
 	 ** Nuxt.js modules
 	 */
-	modules: ['@nuxt/http', '@nuxt/content', '@nuxtjs/sitemap'],
+	modules: [
+		'@nuxt/http',
+		'@nuxt/content',
+		'@nuxtjs/sitemap',
+		'@nuxtjs/redirect-module',
+	],
 	/*
 	 ** Build configuration
 	 ** See https://nuxtjs.org/api/configuration-build/
@@ -123,18 +128,13 @@ export default {
 		},
 	},
 
-	router: {
-		trailingSlash: true,
-	},
-
 	sitemap: {
 		hostname: 'https://0to100.ink',
 		gzip: true,
-		exculde: ['/impressum/', '/datenschutz/'],
+		exculde: ['/impressum', '/datenschutz'],
 		routes() {
 			return getRoutes()
 		},
-		trailingSlash: true,
 	},
 
 	pwa: {
@@ -147,6 +147,8 @@ export default {
 			background_color: '#ffffff',
 		},
 	},
+
+	redirect: [{ from: '^/blog/page/0', to: '/blog' }],
 
 	generate: {
 		crawler: true,

@@ -36,11 +36,12 @@ export default {
 .project {
 	width: 100%;
 	display: flex;
+	align-items: center;
 	overflow: hidden;
 	&:hover {
 		img {
-			margin-top: 5%;
-			margin-bottom: -5%;
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 	}
 	@media (max-width: 1000px) {
@@ -58,8 +59,8 @@ export default {
 }
 
 img {
-	transition: margin 200ms;
-	margin: 10% auto -10%;
+	transition: margin 800ms;
+	margin: 12px auto -12px;
 	width: 40%;
 	height: 100%;
 	@media (max-width: 750px) {
