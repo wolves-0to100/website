@@ -20,14 +20,14 @@ deploy-stage:
   - develop
   script:
   - echo "Deploying to Stage"
-  - ssh -l $SSH_USER -W $SSH_SERVER "cd /srv/staging.0to100.ink/ && git pull && npm i && npm run build"
+  - ssh $SSH_USER@$SSH_SERVER "cd /srv/staging.0to100.ink/ && git pull && npm i && npm run build"
 deploy-prod:
   stage: deploy-prod
   only:
   - master
   script:
   - echo "Deploying to Prod"
-  - ssh -l $SSH_USER -W $SSH_SERVER "cd /srv/0to100.ink/ && git pull && npm i && npm run build"
+  - ssh $SSH_USER@$SSH_SERVER "cd /srv/0to100.ink/ && git pull && npm i && npm run build"
 lhci:
   stage: lhci
   image: cypress/browsers:node12.6.0-chrome77
