@@ -35,14 +35,14 @@ build:
     paths:
     - dist/
 deploy-stage:
-  stage: deploy
+  stage: deploy-stage
   only:
   - develop
   script:
   - echo "Deploying to Stage"
   - ssh $SHH_USER:$SSH_SERVER "cd /srv/staging.0to100.ink/ && git pull && npm i && npm run build"
 deploy-prod:
-  stage: deploy
+  stage: deploy-prod
   only:
   - master
   script:
