@@ -69,6 +69,11 @@ export default {
 		margin-bottom: 1em;
 	}
 
+	.card {
+		padding: 0;
+		height: 100%;
+	}
+
 	&:hover {
 		color: inherit;
 	}
@@ -84,11 +89,6 @@ picture {
 .img {
 	width: 100%;
 	max-height: 220px;
-}
-
-.card {
-	padding: 0;
-	height: 100%;
 }
 
 .content {
