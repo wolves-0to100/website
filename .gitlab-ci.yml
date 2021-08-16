@@ -16,7 +16,6 @@ before_script:
   - mkdir -p ~/.ssh
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 stages:
-- build
 - deploy-stage
 - deploy-prod
 - lhci
@@ -24,16 +23,6 @@ stages:
 cache:
   paths:
   - node_modules/
-build:
-  stage: build
-  only:
-  - master
-  script:
-  - npm install
-  - npm run generate
-  artifacts:
-    paths:
-    - dist/
 deploy-stage:
   stage: deploy-stage
   only:
