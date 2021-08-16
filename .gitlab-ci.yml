@@ -1,5 +1,5 @@
 default:
-  image: node:lts
+  image: alpine:latest
 before_script:
   - apt-get update -qq
   - apt-get install -qq git
