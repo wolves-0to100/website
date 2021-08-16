@@ -20,7 +20,7 @@ deploy-stage:
   - develop
   script:
   - echo "Deploying to Stage"
-  - ssh $SSH_USER@$SSH_SERVER "cd /srv/staging.0to100.ink/ && git pull && npm i && npm run build"
+  - ssh $SSH_USER@$SSH_SERVER "cd /srv/stage.0to100.ink/ && git pull && npm i && npm run build"
 deploy-prod:
   stage: deploy-prod
   only:
