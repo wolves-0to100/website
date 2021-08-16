@@ -95,7 +95,6 @@ export default {
 		'@nuxtjs/eslint-module',
 		'@nuxtjs/color-mode',
 		'@nuxtjs/pwa',
-		'@nuxt/image',
 	],
 	/*
 	 ** Nuxt.js modules
@@ -105,6 +104,7 @@ export default {
 		'@nuxt/content',
 		'@nuxtjs/sitemap',
 		'@nuxtjs/redirect-module',
+		'@nuxt/image',
 	],
 	/*
 	 ** Build configuration
