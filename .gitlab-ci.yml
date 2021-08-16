@@ -1,11 +1,5 @@
 default:
   image: alpine:latest
-before_script:
-  - apk --update add openssh-client
-  - eval $(ssh-agent -s)
-  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-  - mkdir -p ~/.ssh
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 stages:
 - deploy-stage
 - deploy-prod
@@ -19,6 +13,11 @@ deploy-stage:
   only:
   - develop
   script:
+  - apk --update add openssh-client
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   - echo "Deploying to Stage"
   - ssh $SSH_USER@$SSH_SERVER "cd /srv/stage.0to100.ink/ && git pull && npm i && npm run build"
 deploy-prod:
@@ -26,6 +25,11 @@ deploy-prod:
   only:
   - master
   script:
+  - apk --update add openssh-client
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   - echo "Deploying to Prod"
   - ssh $SSH_USER@$SSH_SERVER "cd /srv/0to100.ink/ && git pull && npm i && npm run build"
 lhci:
