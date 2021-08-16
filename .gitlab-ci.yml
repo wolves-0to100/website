@@ -1,8 +1,7 @@
 default:
   image: alpine:latest
 before_script:
-  - apt-get update -qq
-  - apt-get install -qq git
+  - apk --update add openssh-client
   # Setup SSH deploy keys
   - "which ssh-agent || ( apt-get install -qq openssh-client )"
   - eval $(ssh-agent -s)
