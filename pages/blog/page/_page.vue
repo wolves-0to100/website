@@ -18,7 +18,7 @@
 			</div>
 			<div class="nav">
 				<nuxt-link v-if="rootBlog" :to="rootBlog" exact>
-					Neuere Posts
+					&lt;- Neuere Posts
 				</nuxt-link>
 				<nuxt-link
 					v-else-if="hasPrev"
@@ -26,7 +26,7 @@
 						params: { page: ($route.params.page | 0) - 1 },
 					}"
 				>
-					Neuere Posts
+					&lt;- Neuere Posts
 				</nuxt-link>
 				<nuxt-link
 					v-if="hasNext"
@@ -34,7 +34,7 @@
 						params: { page: ($route.params.page | 0) + 1 },
 					}"
 				>
-					Ältere Posts
+					Ältere Posts ->
 				</nuxt-link>
 			</div>
 		</main>

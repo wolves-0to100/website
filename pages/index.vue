@@ -217,7 +217,7 @@ section {
 
 .nav {
 	display: flex;
-	justify-content: right;
+	justify-content: flex-end;
 	a {
 		font-size: 14px;
 		margin-top: 1em;
