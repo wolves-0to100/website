@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="wrapper">
 		<section>
 			<h1>/Uses</h1>
 		</section>
@@ -78,7 +78,7 @@ export default {
 			acceptCookies: false,
 			sections: [
 				{
-					title: 'Hardware',
+					title: 'Entwicklung',
 					content: [
 						{
 							title: 'MacBook Pro 2016',
@@ -89,11 +89,6 @@ export default {
 								'512GB Speicher',
 							],
 							link: 'https://www.amazon.de/Apple-MacBook-Core-i7-Prozessor-8-Generation/dp/B07FL1M4LQ?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=MacBook+Pro&qid=1614241250&quartzVehicle=184-492&replacementKeywords=macbook&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExUkxZUFJUMFUyN0lWJmVuY3J5cHRlZElkPUEwOTcyMzY2MlE2SVZKVzY5NFIxWiZlbmNyeXB0ZWRBZElkPUEwODkyNDEwUlFDVk9JR1lHSVdXJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=ll1&tag=0to1000a-21&linkId=acf3afb1bd4cafd083404e9ca44f330d&language=de_DE&ref_=as_li_ss_tl',
-						},
-						{
-							title: 'Radeon RX Vega 64 8 GB',
-							details: ['im Sonnet eGFX Breakaway Box'],
-							link: 'https://www.amazon.de/GIGABYTE-Radeon-RX-Vega-Gaming/dp/B079MFMQ8D?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=radeon+rx+vega+64+8gb&qid=1614241294&sr=8-9&linkCode=ll1&tag=0to1000a-21&linkId=a9ab1271c6ce63912c60be7dc3d973ba&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Keyboard',
@@ -110,7 +105,50 @@ export default {
 							details: ['LG Ultrawide Display', '27" Diagonale'],
 							link: 'https://www.amazon.de/LG-29WL50S-B-Zoll-UltraWideTM-Maxxaudio/dp/B07XTW5FPH?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=LG+Ultrawide+Display+27+zoll&qid=1614241410&sr=8-3&linkCode=ll1&tag=0to1000a-21&linkId=afcfc156d7ccd62a66358cd841cc1b1d&language=de_DE&ref_=as_li_ss_tl',
 						},
-
+					],
+				},
+				{
+					title: 'Gaming',
+					content: [
+						{
+							title: 'AMD Ryzen 7 5800X',
+							details: ['8x 3.80GHz'],
+							link: 'https://www.amazon.de/Memory-PC-Aufr%C3%BCst-Kit-komplett-montiert/dp/B08P32KTQZ?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=AMD+Ryzen+7+5800X&qid=1629111958&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExTllNVlhSTTI1R1JEJmVuY3J5cHRlZElkPUEwNTM1OTYwM0dHMjNPOUlQOUQzNSZlbmNyeXB0ZWRBZElkPUEwMTg2ODAwMTVOS0oyTUg0RFVEOCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=ll1&tag=0to1000a-21&linkId=1bf281817d08a97441d76e02c8952dd3&language=de_DE&ref_=as_li_ss_tl',
+						},
+						{
+							title: 'Corsair Hydro Series H100x',
+							details: ['CPU Wasserkühlung'],
+							link: 'https://www.amazon.de/Corsair-Wasserk%C3%BChlung-L%C3%BCfter-Performance-schwarz/dp/B07B68T46Q?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Corsair+Hydro+Series+H100x&qid=1629112022&sr=8-3&linkCode=ll1&tag=0to1000a-21&linkId=25627b89696e943a0fb5a1dd1f2ac36e&language=de_DE&ref_=as_li_ss_tl',
+						},
+						{
+							title: 'AMD Radeon RX Vega 64',
+							details: ['Grafikkarte'],
+						},
+						{
+							title: 'MSI MPG B550 Gaming Edge WiFi',
+							details: ['Motherboard', 'USB 3.2', 'WLAN 6'],
+							link: 'https://www.amazon.de/MSI-MPG-B550-Gaming-Motherboard/dp/B08B4THL9P?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=MSI+MPG+B550+Gaming+Edge+WIFI+AMD+B550&qid=1629112257&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFPQUEwRVJSQkpERVMmZW5jcnlwdGVkSWQ9QTAyNzU2MzMyUjdJNFMwT0RINk1OJmVuY3J5cHRlZEFkSWQ9QTA1MTc3NjYxS0tVQTRIR0cwUVA3JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=ll1&tag=0to1000a-21&linkId=8131081e0efcd3464b363c615cb9ba47&language=de_DE&ref_=as_li_ss_tl',
+						},
+						{
+							title: 'Samsung 980 PRO',
+							details: ['1 TB', 'PCIe 4.0', 'NVMe M.2'],
+							link: 'https://www.amazon.de/Samsung-7-000-Internes-Solid-MZ-V8P2T0BW/dp/B08GS7748F?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=1000GB%2BSamsung%2B980%2BPro%2BM.2%2BPCIe%2B4.%2B3D-NAND%2BTLC&qid=1629112387&sr=8-3&th=1&linkCode=ll1&tag=0to1000a-21&linkId=10c496271a984db51d9dce9d59c0e72b&language=de_DE&ref_=as_li_ss_tl',
+						},
+						{
+							title: 'HyperX Fury',
+							details: ['2x 16GB', '3200MHz DDR4'],
+							link: 'https://www.amazon.de/HyperX-HX432C16FB3AK2-16-Arbeitsspeicher-3200MHz/dp/B083PXC5L3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=32GB%2BHyperX%2BFURY%2BRGB%2BDDR4-3200%2BDIMM&qid=1629112534&sr=8-1&th=1&linkCode=ll1&tag=0to1000a-21&linkId=71c8963254fc735890cbc16532435f86&language=de_DE&ref_=as_li_ss_tl',
+						},
+						{
+							title: 'Lian Li PC-O11DX',
+							details: ['Schwarz'],
+							link: 'https://www.amazon.de/Lian-PC-O11DX-Dynamischer-Midi-Tower-geh%C3%A4rtetes/dp/B07C88X1VV?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Lian+Li+PC-O11+Dynamic&qid=1629111807&sr=8-1&linkCode=ll1&tag=0to1000a-21&linkId=d03d94a6e3143580dce2465d48fd6deb&language=de_DE&ref_=as_li_ss_tl',
+						},
+						{
+							title: 'Monitor',
+							details: ['LG Ultrawide Display', '27" Diagonale'],
+							link: 'https://www.amazon.de/LG-29WL50S-B-Zoll-UltraWideTM-Maxxaudio/dp/B07XTW5FPH?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=LG+Ultrawide+Display+27+zoll&qid=1614241410&sr=8-3&linkCode=ll1&tag=0to1000a-21&linkId=afcfc156d7ccd62a66358cd841cc1b1d&language=de_DE&ref_=as_li_ss_tl',
+						},
 						{
 							title: 'Mikrofone',
 							details: ['Rode Podcaster USB Mic'],
@@ -162,19 +200,6 @@ export default {
 							title: 'ForkLift',
 							details: ['FTP Client'],
 						},
-					],
-				},
-				{
-					title: 'Design',
-					content: [
-						{
-							title: 'Sketch',
-							details: ['Eigene Design Arbeiten'],
-						},
-						{
-							title: 'Figma',
-							details: ['Design in Teams'],
-						},
 						{
 							title: 'Affinity Suite',
 							details: [
@@ -191,7 +216,7 @@ export default {
 		}
 	},
 	head: {
-		title: '0to100 | Uses',
+		title: 'Uses | 0to100',
 		meta: [
 			{
 				hid: 'description',
@@ -205,9 +230,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
+.wrapper {
 	width: 100%;
-	padding: 100px 0;
+	padding: 0;
 }
 
 h1 {
@@ -253,7 +278,7 @@ section {
 	padding: 120px 10%;
 	> * {
 		margin: 0 auto;
-		max-width: 1080px;
+		max-width: 1200px;
 	}
 }
 

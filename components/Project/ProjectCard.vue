@@ -3,7 +3,13 @@
 		<div class="content">
 			<slot></slot>
 		</div>
-		<img :src="getImage(img)" :alt="`Bilder von ${title}`" />
+		<nuxt-picture
+			sizes="xs:500px sm:600px md:600px lg:600px xl:600px"
+			loading="lazy"
+			fit="cover"
+			:src="getImage(img)"
+			:alt="`Bilder von ${title}`"
+		/>
 	</Card>
 </template>
 
@@ -26,7 +32,7 @@ export default {
 	},
 	methods: {
 		getImage(img) {
-			return require(`../../assets/Projects/${img}.png`)
+			return `/Projects/${img}.png`
 		},
 	},
 }
@@ -36,11 +42,12 @@ export default {
 .project {
 	width: 100%;
 	display: flex;
+	align-items: center;
 	overflow: hidden;
 	&:hover {
 		img {
-			margin-top: 5%;
-			margin-bottom: -5%;
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 	}
 	@media (max-width: 1000px) {
@@ -57,16 +64,19 @@ export default {
 	}
 }
 
-img {
-	transition: margin 200ms;
-	margin: 10% auto -10%;
+picture {
+	transition: margin 800ms;
+	margin: 12px auto -12px;
 	width: 40%;
+	max-width: 40%;
 	height: 100%;
 	@media (max-width: 750px) {
 		width: 60%;
+		max-width: 60%;
 	}
 	@media (max-width: 600px) {
 		width: 80%;
+		max-width: 80%;
 	}
 }
 </style>

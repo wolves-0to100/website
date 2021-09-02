@@ -86,7 +86,7 @@ section {
 	padding: 120px 10%;
 	> * {
 		margin: 0 auto;
-		max-width: 1080px;
+		max-width: 1200px;
 	}
 }
 

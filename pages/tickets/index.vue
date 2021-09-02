@@ -44,7 +44,7 @@ export default {
 		},
 	},
 	head: {
-		title: '0to100 | Deine Tickets',
+		title: 'Deine Tickets | 0to100',
 	},
 }
 </script>

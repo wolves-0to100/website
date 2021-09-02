@@ -1,5 +1,5 @@
 <template>
-	<article>
+	<div class="container">
 		<nuxt-picture
 			class="img"
 			:src="`/Blog/${article.img}`"
@@ -8,32 +8,36 @@
 			loading="lazy"
 			fit="cover"
 		/>
-		<h1>{{ article.title }}</h1>
-		<p class="author">{{ article.author }}</p>
-		<div class="info">
-			<div class="details">
-				<div class="description">
-					<p><b>Beschreibung</b></p>
-					<p>{{ article.description }}</p>
-				</div>
-				<p>Lesezeit: {{ article.readingTime }} Minuten</p>
+		<article>
+			<div class="title">
+				<h1>{{ article.title }}</h1>
+				<p class="author">{{ article.author }}</p>
 			</div>
-			<ul class="toc">
-				<li v-for="link of article.toc" :key="link.id">
-					<NuxtLink
-						:to="`#${link.id}`"
-						:class="`level-${link.depth}`"
-						>{{ link.text }}</NuxtLink
-					>
-				</li>
-			</ul>
-		</div>
-		<nuxt-content :document="article" />
-		<div class="dates">
-			<p>Veröffentlicht: {{ formatDate(article.createdAt) }}</p>
-			<p>Ak­tu­a­li­sie­ren: {{ formatDate(article.updatedAt) }}</p>
-		</div>
-	</article>
+			<div class="info">
+				<div class="details">
+					<div class="description">
+						<p><b>Beschreibung</b></p>
+						<p>{{ article.description }}</p>
+					</div>
+					<p>Lesezeit: {{ article.readingTime }} Minuten</p>
+				</div>
+				<ul class="toc">
+					<li v-for="link of article.toc" :key="link.id">
+						<NuxtLink
+							:to="`#${link.id}`"
+							:class="`level-${link.depth}`"
+							>{{ link.text }}</NuxtLink
+						>
+					</li>
+				</ul>
+			</div>
+			<nuxt-content :document="article" />
+			<div class="dates">
+				<p>Veröffentlicht: {{ formatDate(article.createdAt) }}</p>
+				<p>Ak­tu­a­li­sie­ren: {{ formatDate(article.updatedAt) }}</p>
+			</div>
+		</article>
+	</div>
 </template>
 
 <script>
@@ -134,84 +138,67 @@ export default {
 }
 </script>
 
-<style lang="scss">
-picture img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.nuxt-content {
-	h2,
-	h3,
-	h4 {
-		margin-top: 2em;
-	}
-
-	p,
-	ul,
-	ol {
-		margin: 1rem 0;
-	}
-
-	li {
-		padding-left: 10px;
-	}
-
-	a {
-		text-decoration: none;
-		font-weight: 600;
-	}
-	table {
-		margin: 1em 0;
-	}
-	th {
-		text-align: left;
-	}
-	tr {
-		height: 1em;
-	}
-	td {
-		vertical-align: top;
-		padding: 0.2em 2em 0.2em 0;
-	}
-
-	a.nuxt-link-active {
-		border-bottom: none;
-	}
-}
-
-.nuxt-content-highlight {
-	font-size: 0.9rem;
-}
-
-code[class*='language-'],
-pre[class*='language-'] {
-	font-family: 'JetBrains Mono';
-}
-</style>
-
 <style lang="scss" scoped>
-article {
+.container {
 	width: 100%;
+	padding: 0 0 100px;
 	margin: 0 auto;
-	padding: 100px 10%;
-	max-width: 1080px;
-	@media (min-width: 1600px) {
-		padding: 100px 160px;
+	min-height: 100vh;
+	max-width: 1200px;
+	@media (max-width: 1360px) {
+		padding: 0 80px 100px;
+		max-width: unset;
 	}
+	@media (max-width: 600px) {
+		padding: 0 20px 80px;
+	}
+}
+
+article {
+	max-width: 760px;
 }
 
 .img {
-	position: absolute;
-	top: 0;
-	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 400px;
 	width: 100%;
-	height: 300px;
 	pointer-events: none;
 	user-select: none;
-	opacity: 0.2;
 	z-index: -1;
+}
+
+.title {
+	position: relative;
+	margin-top: -6rem;
+	padding: 2rem 3rem 0 0;
+	min-width: 50%;
+	width: fit-content;
+	z-index: 12;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: white;
+		z-index: -1;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: -12px;
+		left: 12px;
+		right: -12px;
+		bottom: 12px;
+		background-color: #d90000;
+		z-index: -2;
+	}
+	@media (max-width: 600px) {
+		margin-top: -4rem;
+	}
 }
 
 h1 {
@@ -276,6 +263,9 @@ h1 {
 			background-color: #111111;
 		}
 	}
+	.title::after {
+		background-color: #1a1a1a;
+	}
 }
 
 .toc {
@@ -297,5 +287,56 @@ h1 {
 		margin-top: 1rem;
 		max-width: 100%;
 	}
+}
+</style>
+
+<style lang="scss">
+.nuxt-content {
+	h2,
+	h3,
+	h4 {
+		margin-top: 2em;
+	}
+
+	p,
+	ul,
+	ol {
+		margin: 1rem 0;
+	}
+
+	li {
+		padding-left: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: 600;
+	}
+	table {
+		margin: 1em 0;
+	}
+	th {
+		text-align: left;
+	}
+	tr {
+		height: 1em;
+	}
+	td {
+		vertical-align: top;
+		padding: 0.2em 2em 0.2em 0;
+	}
+
+	a.nuxt-link-active {
+		border-bottom: none;
+	}
+}
+
+.nuxt-content-highlight {
+	font-size: 0.9rem;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+	font-family: 'JetBrains Mono';
 }
 </style>

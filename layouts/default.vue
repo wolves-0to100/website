@@ -6,9 +6,9 @@
 					<img :src="logoLink" alt="0to100 Logo" />
 				</nuxt-link>
 				<nav>
-					<nuxt-link to="/uses/">Uses</nuxt-link>
-					<nuxt-link to="/blog/">Blog</nuxt-link>
-					<nuxt-link to="/projekte/">Projekte</nuxt-link>
+					<nuxt-link to="/uses">Uses</nuxt-link>
+					<nuxt-link to="/projekte">Projekte</nuxt-link>
+					<nuxt-link to="/blog">Blog</nuxt-link>
 					<button aria-label="Color Mode" @click="toggleColorMode">
 						<svg
 							fill="none"
@@ -50,10 +50,14 @@ export default {
 	},
 	methods: {
 		toggleColorMode() {
-			if (this.$colorMode.value === 'light') {
-				this.$colorMode.preference = 'dark'
+			if (this.$colorMode.preference === 'system') {
+				if (this.$colorMode.value === 'light') {
+					this.$colorMode.preference = 'dark'
+				} else {
+					this.$colorMode.preference = 'light'
+				}
 			} else {
-				this.$colorMode.preference = 'light'
+				this.$colorMode.preference = 'system'
 			}
 		},
 	},
@@ -76,7 +80,7 @@ header {
 	height: 100px;
 	backdrop-filter: blur(8px);
 	background: rgba(255, 255, 255, 0.6);
-	z-index: 1;
+	z-index: 99;
 	perspective: 1000px;
 
 	@media (max-width: 600px) {
