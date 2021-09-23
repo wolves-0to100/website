@@ -5,7 +5,7 @@
 		</div>
 		<nuxt-picture
 			sizes="xs:500px sm:600px md:600px lg:600px xl:600px"
-			loading="lazy"
+			:loading="loadingType"
 			fit="cover"
 			:src="getImage(img)"
 			:alt="`Bilder von ${title}`"
@@ -28,6 +28,15 @@ export default {
 		img: {
 			type: String,
 			default: '',
+		},
+		lazy: {
+			type: Boolean,
+			default: true,
+		},
+	},
+	computed: {
+		loadingType() {
+			return this.lazy ? 'lazy' : 'eager'
 		},
 	},
 	methods: {

@@ -11,6 +11,7 @@
 				class="project"
 				img="streamerGames"
 				title="Streamer Games"
+				:lazy="false"
 			>
 				<h2>Streamer Games</h2>
 				<p>
@@ -28,6 +29,7 @@
 				class="project"
 				img="cocktails"
 				title="Minimal Cocktails"
+				:lazy="false"
 			>
 				<h2>Minimal Cocktails</h2>
 				<p>
@@ -74,7 +76,7 @@ export default {
 			{
 				hid: 'canonical',
 				rel: 'canonical',
-				href: `https://0to100.ink/projekte/`,
+				href: `https://0to100.ink/projekte`,
 			},
 		],
 	},

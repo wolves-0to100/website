@@ -11,9 +11,10 @@
 			<h2>Artikel</h2>
 			<div class="posts">
 				<article-card
-					v-for="article in articles"
+					v-for="(article, i) in articles"
 					:key="article.title"
 					:article="article"
+					:lazy="i > 4"
 				/>
 			</div>
 			<div class="nav">
