@@ -5,7 +5,7 @@
 			:src="`/Blog/${article.img}`"
 			:alt="article.title"
 			sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
-			loading="lazy"
+			loading="eager"
 			fit="cover"
 		/>
 		<article>
