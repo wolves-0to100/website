@@ -1,5 +1,5 @@
 <template>
-	<nuxt-link class="post" :to="`/blog/${article.slug}/`">
+	<nuxt-link class="post" :to="`/blog/${article.slug}`">
 		<card>
 			<nuxt-picture
 				class="img"
