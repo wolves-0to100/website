@@ -26,14 +26,14 @@
 		</div>
 		<div>
 			<h2>Seiten</h2>
-			<nuxt-link to="/uses/">Uses</nuxt-link>
-			<nuxt-link to="/blog/">Blog</nuxt-link>
-			<nuxt-link to="/projekte/">Projekte</nuxt-link>
+			<nuxt-link to="/uses">Uses</nuxt-link>
+			<nuxt-link to="/blog">Blog</nuxt-link>
+			<nuxt-link to="/projekte">Projekte</nuxt-link>
 		</div>
 		<div>
 			<h2>Rechtliches</h2>
-			<nuxt-link to="/datenschutz/">Datenschutz</nuxt-link>
-			<nuxt-link to="/impressum/">Impressum</nuxt-link>
+			<nuxt-link to="/datenschutz">Datenschutz</nuxt-link>
+			<nuxt-link to="/impressum">Impressum</nuxt-link>
 		</div>
 		<div class="wolves">
 			<p>Made by <a href="https://wolves.ink">Wolves</a></p>
