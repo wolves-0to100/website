@@ -225,6 +225,13 @@ export default {
 					'Eine Liste von Dinge, welche ich in meinem Alltag benutze.',
 			},
 		],
+		link: [
+			{
+				hid: 'canonical',
+				rel: 'canonical',
+				href: `https://0to100.ink/uses`,
+			},
+		],
 	},
 }
 </script>
