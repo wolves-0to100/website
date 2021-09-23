@@ -11,9 +11,10 @@
 			<h2>Artikel</h2>
 			<div class="posts">
 				<article-card
-					v-for="article in articles"
+					v-for="(article, i) in articles"
 					:key="article.title"
 					:article="article"
+					:lazy="i < 4"
 				/>
 			</div>
 			<div class="nav">
@@ -61,7 +62,7 @@ export default {
 			{
 				hid: 'canonical',
 				rel: 'canonical',
-				href: `https://0to100.ink/blog/`,
+				href: `https://0to100.ink/blog`,
 			},
 		],
 	},

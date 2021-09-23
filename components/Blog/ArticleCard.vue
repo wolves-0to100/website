@@ -6,7 +6,7 @@
 				:src="`/Blog/${article.img}`"
 				:alt="article.title"
 				sizes="xs:760px sm:760px md:760px lg:760px xl:760px"
-				loading="lazy"
+				:loading="loadingType"
 				fit="cover"
 			/>
 			<span class="tag">{{ article.tags }}</span>
@@ -40,6 +40,15 @@ export default {
 					createdAt: new Date().toString(),
 				}
 			},
+		},
+		lazy: {
+			type: Boolean,
+			default: true,
+		},
+	},
+	computed: {
+		loadingType() {
+			return this.lazy ? 'lazy' : 'eager'
 		},
 	},
 	methods: {
