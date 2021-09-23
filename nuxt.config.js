@@ -62,12 +62,12 @@ export default {
 			},
 		],
 		script: [
-			// {
-			// 	defer: true,
-			// 	'data-cf-beacon':
-			// 		'{"token": "a5cf81f981704fc6ba12e733d962b0df"}',
-			// 	src: 'https://static.cloudflareinsights.com/beacon.min.js',
-			// },
+			{
+				defer: true,
+				'data-cf-beacon':
+					'{"token": "a5cf81f981704fc6ba12e733d962b0df"}',
+				src: 'https://static.cloudflareinsights.com/beacon.min.js',
+			},
 		],
 		htmlAttrs: {
 			lang: 'de',
