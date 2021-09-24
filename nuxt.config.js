@@ -154,23 +154,4 @@ export default {
 		crawler: true,
 		fallback: true,
 	},
-
-	render: {
-		csp: {
-			hashAlgorithm: 'sha256',
-			unsafeInlineCompatibility: true,
-			policies: {
-				'base-uri': ["'self'"],
-				'default-src': ["'self'", 'stage.0to100.ink'],
-				'script-src': [
-					"'strict-dynamic'",
-					"'unsafe-inline'",
-					'https://static.cloudflareinsights.com/beacon.min.js',
-				],
-				'connect-src': ["'self'", 'https://cloudflareinsights.com'],
-				'object-src': ["'none'"],
-			},
-			addMeta: true,
-		},
-	},
 }
