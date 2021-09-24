@@ -159,9 +159,9 @@ export default {
 		csp: {
 			hashAlgorithm: 'sha256',
 			policies: {
+				'default-src': ["'self'"],
 				'script-src': [
 					"'self'",
-					"'unsafe-inline'",
 					'https://static.cloudflareinsights.com',
 					'https://cloudflareinsights.com',
 				],
