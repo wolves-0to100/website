@@ -160,6 +160,7 @@ export default {
 			hashAlgorithm: 'sha256',
 			unsafeInlineCompatibility: true,
 			policies: {
+				'base-uri': ["'self"],
 				'script-src': [
 					"'strict-dynamic'",
 					"'unsafe-inline'",
