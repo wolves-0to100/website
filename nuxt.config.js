@@ -157,8 +157,8 @@ export default {
 
 	render: {
 		csp: {
+			hashAlgorithm: 'sha256',
 			policies: {
-				'default-src': ["'self'"],
 				'script-src': [
 					'https://static.cloudflareinsights.com',
 					'https://cloudflareinsights.com',
