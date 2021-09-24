@@ -161,10 +161,12 @@ export default {
 			unsafeInlineCompatibility: true,
 			policies: {
 				'script-src': [
+					"'strict-dynamic'",
 					"'unsafe-inline'",
 					'https://static.cloudflareinsights.com',
 					'https://cloudflareinsights.com',
 				],
+				'object-src': ["'none'"],
 			},
 			addMeta: true,
 		},
