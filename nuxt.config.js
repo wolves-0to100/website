@@ -160,10 +160,10 @@ export default {
 			hashAlgorithm: 'sha256',
 			policies: {
 				'script-src': [
+					"'self'",
+					"'unsafe-inline'",
 					'https://static.cloudflareinsights.com',
 					'https://cloudflareinsights.com',
-					'https://0to100.ink',
-					'https://stage.0to100.ink',
 				],
 			},
 			addMeta: true,
