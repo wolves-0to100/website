@@ -154,4 +154,19 @@ export default {
 		crawler: true,
 		fallback: true,
 	},
+
+	render: {
+		csp: {
+			hashAlgorithm: 'sha256',
+			policies: {
+				'script-src': [
+					'https://static.cloudflareinsights.com',
+					'https://cloudflareinsights.com',
+					'https://0to100.ink',
+					'https://stage.0to100.ink',
+				],
+			},
+			addMeta: true,
+		},
+	},
 }
