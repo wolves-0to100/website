@@ -157,14 +157,23 @@ export default {
 
 	render: {
 		csp: {
+			reportOnly: false,
+			addMeta: true,
 			hashAlgorithm: 'sha256',
+			unsafeInlineCompatiblity: true,
 			policies: {
-				'script-src': [
+				'default-src': [
+					"'self'",
+					'https:',
 					'https://static.cloudflareinsights.com',
 					'https://cloudflareinsights.com',
 				],
+				'script-src': ["'self'", "'strict-dynamic'", 'https:'],
+				'style-src': ["'self'", "'strict-dynamic'", 'https:'],
+				'frame-src': [],
+				'object-src': ["'none'"],
+				'base-uri': ["'self"],
 			},
-			addMeta: true,
 		},
 	},
 }
