@@ -168,6 +168,7 @@ export default {
 					'https://static.cloudflareinsights.com',
 					'https://cloudflareinsights.com',
 				],
+				'style-src': ["'self'", "'strict-dynamic'", 'data:'],
 				'object-src': ["'none'"],
 			},
 			addMeta: true,
