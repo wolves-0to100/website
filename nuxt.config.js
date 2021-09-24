@@ -161,11 +161,14 @@ export default {
 			unsafeInlineCompatibility: true,
 			policies: {
 				'base-uri': ["'self'"],
-				'default-src': ["'self'", "'unsafe-inline'"],
+				'default-src': ["'self'"],
 				'script-src': [
+					"'self'",
 					"'strict-dynamic'",
+					"'unsafe-inline'",
 					'https://static.cloudflareinsights.com/beacon.min.js',
 				],
+				'connect-src': ["'self'", 'https://cloudflareinsights.com'],
 				'object-src': ['none'],
 			},
 			addMeta: true,
