@@ -166,7 +166,7 @@ export default {
 					"'strict-dynamic'",
 					'https://static.cloudflareinsights.com/beacon.min.js',
 				],
-				'object-src': ['data:'],
+				'object-src': ['none'],
 			},
 			addMeta: true,
 		},
