@@ -6,6 +6,8 @@
 			:alt="article.title"
 			sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
 			loading="eager"
+			height="400"
+			width="1200"
 			fit="cover"
 		/>
 		<article>

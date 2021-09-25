@@ -14,7 +14,7 @@
 					v-for="(article, i) in articles"
 					:key="article.title"
 					:article="article"
-					:lazy="i > 4"
+					:lazy="i >= 4"
 				/>
 			</div>
 			<div class="nav">

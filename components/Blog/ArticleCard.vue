@@ -7,6 +7,8 @@
 				:alt="article.title"
 				sizes="xs:760px sm:760px md:760px lg:760px xl:760px"
 				:loading="loadingType"
+				height="220"
+				width="340"
 				fit="cover"
 			/>
 			<span class="tag">{{ article.tags }}</span>
