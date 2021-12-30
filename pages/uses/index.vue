@@ -81,14 +81,14 @@ export default {
 					title: 'Entwicklung',
 					content: [
 						{
-							title: 'MacBook Pro 2016',
+							title: 'MacBook Pro 2021',
 							details: [
-								'15" retina display',
-								'2,9 GHz Quad-Core Intel Core i7',
+								'16" Liquid Retina XDR Display',
+								'M1 Pro',
 								'16GB RAM',
 								'512GB Speicher',
 							],
-							link: 'https://www.amazon.de/Apple-MacBook-Core-i7-Prozessor-8-Generation/dp/B07FL1M4LQ?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=MacBook+Pro&qid=1614241250&quartzVehicle=184-492&replacementKeywords=macbook&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExUkxZUFJUMFUyN0lWJmVuY3J5cHRlZElkPUEwOTcyMzY2MlE2SVZKVzY5NFIxWiZlbmNyeXB0ZWRBZElkPUEwODkyNDEwUlFDVk9JR1lHSVdXJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=ll1&tag=0to1000a-21&linkId=acf3afb1bd4cafd083404e9ca44f330d&language=de_DE&ref_=as_li_ss_tl',
+							link: 'https://www.amazon.de/MK183D-A/dp/B09JQZZRZ7?crid=1KYCV4L3R3GQD&keywords=m1+pro&qid=1640867738&sprefix=m1+pro%2Caps%2C75&sr=8-2&linkCode=ll1&tag=0to1000a-21&linkId=a51fc5beb93bf56c55083753d2329120&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Keyboard',
@@ -102,8 +102,8 @@ export default {
 						},
 						{
 							title: 'Monitor',
-							details: ['LG Ultrawide Display', '27" Diagonale'],
-							link: 'https://www.amazon.de/LG-29WL50S-B-Zoll-UltraWideTM-Maxxaudio/dp/B07XTW5FPH?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=LG+Ultrawide+Display+27+zoll&qid=1614241410&sr=8-3&linkCode=ll1&tag=0to1000a-21&linkId=afcfc156d7ccd62a66358cd841cc1b1d&language=de_DE&ref_=as_li_ss_tl',
+							details: ['LG 4K IPS Panel', '32" Diagonale'],
+							link: 'https://www.amazon.de/LG-FreeSync-Ergonomischer-verstell-schwenkbar/dp/B088BMZ41V?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=X6UM3820MA1O&keywords=lg+4k+32+zoll&qid=1640867805&sprefix=lg+4k+32+zoll%2Caps%2C78&sr=8-2&linkCode=ll1&tag=0to1000a-21&linkId=890c94876247a340f4b579221d37aa84&language=de_DE&ref_=as_li_ss_tl',
 						},
 					],
 				},
@@ -170,9 +170,9 @@ export default {
 							link: 'https://www.amazon.de/Neu-Apple-iPad-Wi-Fi-128-GB/dp/B0863YSKCM?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=iPad+Pro+2018&qid=1614241493&quartzVehicle=184-492&replacementKeywords=ipad+2018&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyVDMyM0taVjBNUzhCJmVuY3J5cHRlZElkPUEwNzI1ODQ1MzA1WEtHNlpCVEhJSSZlbmNyeXB0ZWRBZElkPUEwMjg3ODQ3UDRFNktRM1lEVkZGJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=ll1&tag=0to1000a-21&linkId=e33991f42402a51a01cb68d5c6186705&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
-							title: 'iPhone X',
+							title: 'iPhone 13 Pro Max',
 							details: ['256GB Speicher', 'Space Grey'],
-							link: 'https://www.amazon.de/Apple-iPhone-X-256GB-Space-Grau/dp/B075LWF4C3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=iPhone+X&qid=1614241515&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzQ0M2NDFMVzdYNUIwJmVuY3J5cHRlZElkPUEwMjE5Njk5MUxORTdHREQ3QlM4WiZlbmNyeXB0ZWRBZElkPUEwMjI1MTQ4MzYxWEc3WVZQWTdYWCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=ll1&tag=0to1000a-21&linkId=0e7da1970180d2b53427897fae7415ee&language=de_DE&ref_=as_li_ss_tl',
+							link: 'https://www.amazon.de/Apple-iPhone-Pro-Max-128-GB/dp/B09G9941M5?keywords=iphone%2B13%2Bpro%2Bmax&qid=1640867910&sprefix=iPhone%2B%2Caps%2C117&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNEw3UkZKM0tZODRGJmVuY3J5cHRlZElkPUEwMDc2MDE4OEZFOVlVVUpWWk1CJmVuY3J5cHRlZEFkSWQ9QTAzNzY1MjYyRjdITTBBRUFDT0Y4JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1&linkCode=ll1&tag=0to1000a-21&linkId=314c0a626dfdd5201c21b05f59614f8a&language=de_DE&ref_=as_li_ss_tl',
 						},
 						{
 							title: 'Canon EOS 6D',
